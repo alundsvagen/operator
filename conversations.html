@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>What You Get as a Member | Operator Network — Thought Leadership for Stockholm's C-Suite</title>
+<meta name="description" content="Operator Network is a closed, application-only membership for C-suite executives in Stockholm tech and fintech. Members get 2 media features, a podcast appearance, a public speaking slot, mentor matches and 20+ invite-only events a year.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://operatornetwork.com/conversations.html">
+<link rel="icon" href="https://res.cloudinary.com/dxhph3qls/image/upload/v1783066321/favicon_sdfbjr.png" type="image/png">
+<link rel="apple-touch-icon" href="https://res.cloudinary.com/dxhph3qls/image/upload/v1783066321/favicon_sdfbjr.png">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="What You Get as a Member | Operator Network">
+<meta property="og:description" content="2 media features, a podcast, a public stage, mentor matches and 20+ invite-only events a year — the structured thought leadership journey for Stockholm's C-suite.">
+<meta property="og:url" content="https://operatornetwork.com/conversations.html">
+<meta property="og:image" content="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738044/Frame_18_plhrwm.png">
+<meta property="og:site_name" content="Operator Network">
+<meta property="og:locale" content="en_SE">
+<meta property="og:image:alt" content="Operator Network — closed membership for Stockholm's C-suite">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738044/Frame_18_plhrwm.png">
+<meta name="twitter:title" content="What You Get as a Member | Operator Network">
+<meta name="twitter:description" content="What actually happens when you join Operator Network — month by month.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  html{ scroll-behavior: smooth; }
+  body{ font-family: Inter, sans-serif; }
+
+  .badge{
+    display:inline-flex; align-items:center; padding:6px 14px; border-radius:999px;
+    font-size:.85rem; font-weight:500; white-space:nowrap;
+    background:rgba(10,10,10,0.04); border:1px solid rgb(212,212,212); color:rgb(64,64,64);
+    transition: background .35s ease, transform .35s cubic-bezier(.16,1,.3,1);
+  }
+  .badge:hover{ background:rgba(10,10,10,0.08); transform: translateY(-2px); }
+
+  .nav-link{
+    position:relative; padding:8px 4px; font-size:.92rem; font-weight:500;
+    color: rgb(64,64,64); letter-spacing:.01em;
+    transition: color .3s ease;
+  }
+  .nav-link::after{
+    content:''; position:absolute; left:50%; right:50%; bottom:2px; height:2px;
+    background: rgb(10,10,10); border-radius:2px;
+    transition: left .35s cubic-bezier(.16,1,.3,1), right .35s cubic-bezier(.16,1,.3,1);
+  }
+  .nav-link:hover{ color: rgb(10,10,10); }
+  .nav-link:hover::after{ left:0; right:0; }
+  .nav-link.active{ color: rgb(10,10,10); font-weight:600; }
+  .nav-link.active::after{ left:0; right:0; }
+  .nav-link.nav-cta{
+    color:#fff; background:rgb(10,10,10); padding:10px 20px; border-radius:999px;
+    overflow:hidden; transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
+  }
+  .nav-link.nav-cta::after{ display:none; }
+  .nav-link.nav-cta:hover{ color:#fff; transform: translateY(-2px); box-shadow: 0 10px 24px -8px rgba(0,0,0,.45); }
+  .nav-link.nav-cta span{ display:inline-flex; align-items:center; gap:6px; }
+  .nav-link.nav-cta svg{ transition: transform .35s cubic-bezier(.16,1,.3,1); }
+  .nav-link.nav-cta:hover svg{ transform: translateX(3px); }
+
+  .btn-pop{ transition: transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s ease; }
+  .btn-pop:hover{ transform: translateY(-3px) scale(1.03); }
+
+  .img-pop{ transition: transform .6s cubic-bezier(.16,1,.3,1); }
+  .img-pop:hover{ transform: scale(1.015); }
+
+  .source-link{
+    color: rgb(115,115,115); text-decoration: underline; text-decoration-color: rgba(115,115,115,.35);
+    transition: color .25s ease;
+  }
+  .source-link:hover{ color: rgb(38,38,38); }
+
+  .reveal{
+    opacity:0; transform: translateY(28px);
+    transition: opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1);
+    transition-delay: var(--delay, 0s);
+  }
+  .reveal.in-view{ opacity:1; transform: translateY(0); }
+
+  .footer-link{
+    color: rgb(163,163,163); transition: color .25s ease;
+  }
+  .footer-link:hover{ color: #fff; }
+  .social-icon{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:38px; height:38px; border-radius:999px; border:1px solid rgba(255,255,255,.25);
+    color: rgb(212,212,212); transition: background .25s ease, color .25s ease, border-color .25s ease, transform .35s cubic-bezier(.16,1,.3,1);
+  }
+  .social-icon:hover{ background:#fff; color: rgb(10,10,10); border-color:#fff; transform: translateY(-2px); }
+
+  /* Brand wordmark (footer) */
+  .wordmark{
+    font-weight:800; letter-spacing:-.045em; line-height:.95;
+    transition: letter-spacing .8s cubic-bezier(.16,1,.3,1);
+  }
+  .wordmark:hover{ letter-spacing:-.02em; }
+  .reveal.wordmark{ opacity:1; transform:none; }  /* lines animate, not the block */
+  .footer-wordmark{ font-size: clamp(3.2rem, 11.5vw, 10rem); line-height:.92; user-select:none; }
+  .wm-line{ display:block; overflow:hidden; }
+  .wm-inner{
+    display:inline-block; transform: translateY(115%);
+    transition: transform 1.1s cubic-bezier(.16,1,.3,1);
+  }
+  .wm-line:nth-child(2) .wm-inner{ transition-delay: .12s; }
+  .reveal.in-view .wm-inner{ transform: translateY(0); }
+
+  /* Journey ledger */
+  .journey-row{
+    display:grid; grid-template-columns: 1fr; gap:.75rem 2.5rem;
+    padding:2.25rem 0; border-top:1px solid rgb(229,229,229);
+  }
+  @media (min-width:768px){
+    .journey-row{ grid-template-columns: 130px 260px 1fr; align-items:baseline; }
+  }
+  .journey-num{
+    font-size:4.25rem; font-weight:800; line-height:.9; letter-spacing:-.05em;
+    color: rgb(229,229,229); font-variant-numeric: tabular-nums;
+    transition: color .4s ease;
+  }
+  .journey-row:hover .journey-num{ color: rgb(10,10,10); }
+  .journey-title{ font-size:1.25rem; font-weight:600; line-height:1.3; }
+  .journey-desc{ color: rgb(82,82,82); max-width:56ch; }
+  .phase-label{
+    display:flex; align-items:baseline; gap:1rem; flex-wrap:wrap;
+    padding-top:3.5rem; padding-bottom:1.25rem;
+  }
+  .phase-label .phase-months{
+    font-size:.8rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color: rgb(163,163,163);
+  }
+  .phase-label .phase-name{ font-size:1.5rem; font-weight:700; letter-spacing:-.01em; }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .reveal{ opacity:1; transform:none; transition:none; }
+    .badge:hover, .btn-pop:hover, .img-pop:hover, .journey-row:hover .journey-num{ transform:none; }
+    .wm-inner{ transform:none; transition:none; }
+    .wordmark, .wordmark:hover{ letter-spacing:-.045em; transition:none; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://operatornetwork.com/#organization",
+      "name": "Operator Network",
+      "url": "https://operatornetwork.com/",
+      "logo": "https://res.cloudinary.com/dxhph3qls/image/upload/v1783066321/favicon_sdfbjr.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/77188344",
+        "https://stockholmgrowthfintech.substack.com/",
+        "https://creativeperformancemarketing.substack.com/"
+      ],
+      "description": "Operator Network is a closed, application-only membership community for C-suite executives and founders in Stockholm's tech and fintech industry. It builds each member's thought leadership and executive visibility through a structured 9-month journey of media features, podcast appearances, speaking slots, mentorship and invite-only events.",
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Stockholm",
+          "addressCountry": "SE"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Stockholm"
+      },
+      "knowsAbout": [
+        "thought leadership",
+        "executive visibility",
+        "fintech",
+        "B2B networking",
+        "C-suite peer networks",
+        "Stockholm tech ecosystem"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://operatornetwork.com/conversations.html",
+      "url": "https://operatornetwork.com/conversations.html",
+      "name": "What You Get as a Member | Operator Network",
+      "description": "What members of Operator Network receive: two media features, a podcast appearance, a public speaking slot, mentor matches, hosted and co-hosted events, and access to every invite-only event — delivered through a structured 9-month thought leadership journey in Stockholm.",
+      "inLanguage": "en",
+      "dateModified": "2026-07-03",
+      "isPartOf": {
+        "@id": "https://operatornetwork.com/#organization"
+      },
+      "about": {
+        "@id": "https://operatornetwork.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://res.cloudinary.com/dxhph3qls/image/upload/v1782738044/Frame_18_plhrwm.png"
+      },
+      "breadcrumb": {
+        "@id": "https://operatornetwork.com/conversations.html#breadcrumb"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "#operator-network-definition"
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://operatornetwork.com/conversations.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://operatornetwork.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Conversations",
+          "item": "https://operatornetwork.com/conversations.html"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://operatornetwork.com/conversations.html#journey",
+      "name": "The Operator Network 9-Month Member Journey",
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "numberOfItems": 9,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Goals & aspirations",
+          "description": "A 1:1 onboarding conversation where you define what visibility means for you this year, the stages you want, the story you want to tell, and what success looks like by month 9."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Reading discussion group",
+          "description": "A small reading group built around your specific C-suite role: CEOs with CEOs, CFOs with CFOs. Sharpening the perspective you'll soon be putting into the world."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Podcast & first feature",
+          "description": "Your first media moment. A podcast conversation or a featured article, content you can point to, share, and build on."
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Lead a discussion or dinner",
+          "description": "You step into the host seat, leading a member dinner or discussion on a topic you choose, building the muscle of commanding a room before the bigger stage."
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Co-host an industry event",
+          "description": "You move beyond the closed member group and co-host a larger event alongside Operator Network. Your name in front of the wider Stockholm fintech ecosystem."
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Mentor matching, both ways",
+          "description": "Matched with a mentor further along a path you want to walk and matched as a mentor to someone earlier on theirs. Halfway through the year, you're both receiving and giving."
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Second feature",
+          "description": "A second round of media coverage, this time shaped by everything you've led and hosted since month 3. The story has grown alongside you."
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Speaking slot on a public stage",
+          "description": "A speaking slot at a public industry event or panel, the dinners, the co-host and the features brought together in one moment, in front of a wider audience."
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Reflect, renew, set next year's goals",
+          "description": "You close the loop with a 1:1 review against your month 1 goals, celebrate the year's wins with the group, and set the next round of goals as you renew."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Operator Network?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Operator Network is a closed, application-only membership community for C-suite executives and founders in Stockholm's tech and fintech industry. It builds each member's thought leadership and executive visibility through a structured 9-month journey of media features, podcast appearances, speaking slots, mentorship and invite-only events."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can join Operator Network?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Membership is open by application to CEOs, CFOs, CTOs, CMOs and founders working in or around Stockholm's tech and fintech ecosystem. Every application is reviewed for seniority, contribution and fit — the value of the network is who's in it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do members get?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each membership year includes two published media features, a podcast appearance, a public speaking slot, a two-way mentor match, a member dinner you host, a wider industry event you co-host, 1:1 goal-setting and review conversations, and full access to every invite-only event we run."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the 9-month journey work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every member moves through the same arc: goal-setting in month 1, a role-based reading group in month 2, a first feature and podcast in month 3, hosting in month 4, co-hosting in month 5, mentor matching in month 6, a second feature in month 7, a public stage in month 8, and review and renewal in month 9."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does membership cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The annual fee is deliberately modest — members are selected for fit, not budget. Full details are shared on the 30-minute application call that starts every membership."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I apply?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apply through the application page or book a 30-minute application call. Every membership starts with that conversation, and you'll get an honest answer on whether it's a fit."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body class="bg-white text-neutral-900">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+  <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="/" class="font-bold text-2xl tracking-tight">Operator Network</a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="conversations.html" class="nav-link active" aria-current="page">Conversations</a>
+      <a href="network.html" class="nav-link">Network</a>
+      <a href="index.html#partners" class="nav-link">Partners</a>
+      <a href="apply.html" class="nav-link nav-cta"><span>Apply <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+    </nav>
+    <a href="apply.html" class="md:hidden bg-black text-white text-sm px-4 py-2 rounded-full btn-pop">Apply</a>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="max-w-6xl mx-auto px-6 pt-20 pb-12">
+  <p class="reveal badge">Conversations</p>
+  <h1 class="reveal text-6xl font-bold leading-[1.05] max-w-3xl mt-6">What you get<br>When you Join.</h1>
+  <p id="operator-network-definition" class="reveal text-lg text-neutral-600 mt-6 max-w-xl" style="--delay:.1s">Operator Network is a closed, application-only membership for C-suite executives and founders in Stockholm's tech and fintech industry. It's a structured 9-month arc that turns your expertise into visible thought leadership: features, podcasts, linkedin presence, stages.</p>
+  <p class="reveal text-lg text-neutral-600 mt-4 max-w-xl" style="--delay:.15s">Membership is closed and by application only. If you are ambitious, career oriented and a professional in Stockholm's tech scene <span class="font-semibold text-neutral-900">we recommend that you apply.</span></p>
+  <a href="apply.html" class="reveal btn-pop inline-flex items-center justify-center bg-black text-white text-sm font-medium px-6 py-3 rounded-full mt-8" style="--delay:.2s">Apply for membership →</a>
+  <img class="reveal img-pop rounded-3xl shadow-xl w-full mt-14 aspect-[692/327] object-cover bg-neutral-200"
+       style="--delay:.25s"
+       src="https://res.cloudinary.com/dxhph3qls/image/upload/v1782737742/Frame_2_2_z4l1vs.png" alt="Operator Network members in conversation at an invite-only event">
+</section>
+
+<!-- What you get -->
+<section class="max-w-6xl mx-auto px-6 py-16 border-t">
+  <h2 class="reveal text-4xl font-semibold max-w-2xl">Building Industry Thought Leadership, how?</h2>
+  <p class="reveal text-neutral-600 mt-4 max-w-xl" style="--delay:.05s">Every member will be given the following opprotunities:</p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+    <div class="reveal get-card">
+      <p class="get-num">2</p>
+      <h3 class="font-semibold mt-1">Media features</h3>
+      <p class="text-neutral-600 text-sm mt-2">A featured article in month 3 and a second, bigger story in month 7: published, shareable, yours.</p>
+    </div>
+    <div class="reveal get-card" style="--delay:.1s">
+      <p class="get-num">1</p>
+      <h3 class="font-semibold mt-1">Public Speaking Slot</h3>
+      <p class="text-neutral-600 text-sm mt-2">A stage or panel in front of the wider Stockholm ecosystem.</p>
+    </div>
+    <div class="reveal get-card" style="--delay:.15s">
+      <p class="get-num">1</p>
+      <h3 class="font-semibold mt-1">Mentorship</h3>
+      <p class="text-neutral-600 text-sm mt-2">You recieve a Mentor.</p>
+    </div>
+    <div class="reveal get-card">
+      <p class="get-num">1</p>
+      <h3 class="font-semibold mt-1">Dinner you host</h3>
+      <p class="text-neutral-600 text-sm mt-2">An industry dinner or discussion led and co-hosted by you.</p>
+    </div>
+    <div class="reveal get-card" style="--delay:.05s">
+      <p class="get-num">1</p>
+      <h3 class="font-semibold mt-1">Event you co-host</h3>
+      <p class="text-neutral-600 text-sm mt-2">A wider industry event with your name on it, run alongside Operator Network.</p>
+    </div>
+    <div class="reveal get-card" style="--delay:.1s">
+      <p class="get-num">2</p>
+      <h3 class="font-semibold mt-1">1:1 strategy conversations</h3>
+      <p class="text-neutral-600 text-sm mt-2">Goal-setting in month 1, a full review against those goals in month 9.</p>
+    </div>
+    <div class="reveal get-card" style="--delay:.15s">
+      <p class="get-num">+25</p>
+      <h3 class="font-semibold mt-1">Invite-only member events</h3>
+      <p class="text-neutral-600 text-sm mt-2">Every roundtable, breakfast and dinner we run, all year. No per-event fees.</p>
+    </div>
+    <div class="reveal get-card" style="--delay:.15s">
+      <p class="get-num">1</p>
+      <h3 class="font-semibold mt-1">You Become a Mentor</h3>
+      <p class="text-neutral-600 text-sm mt-2">Challenge yourself and your learnings when you mentor a less experienced professional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Proof strip -->
+<!-- TODO: Replace these numbers with your real, current figures before publishing -->
+<section class="border-t bg-neutral-50">
+  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="reveal">
+      <p class="stat-number">90%</p>
+      <p class="stat-label">C-suite &amp; founder members</p>
+    </div>
+    <div class="reveal" style="--delay:.05s">
+      <p class="stat-number">+25</p>
+      <p class="stat-label">Invite-only events per year</p>
+    </div>
+    <div class="reveal" style="--delay:.1s">
+      <p class="stat-number">2</p>
+      <p class="stat-label">Media features per member, per year</p>
+    </div>
+    <div class="reveal" style="--delay:.15s">
+      <p class="stat-number">9</p>
+      <p class="stat-label">Months from goals to public stage</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why thought leadership -->
+<section class="max-w-6xl mx-auto px-6 py-16 border-t">
+  <h2 class="reveal text-4xl font-semibold max-w-2xl">Thought leadership and why you can't build it alone.</h2>
+  <p class="reveal text-lg text-neutral-600 mt-6 max-w-2xl" style="--delay:.05s">Thought leadership isn't personal branding for its own sake. It's how B2B buyers, boards and recruiters decide who to trust. The research is unambiguous:</p>
+
+  <div class="grid md:grid-cols-3 gap-10 mt-12">
+    <div class="reveal">
+      <p class="stat-number">73%</p>
+      <p class="text-neutral-700 mt-3">of B2B decision-makers say thought leadership is a <span class="font-semibold">more trustworthy basis for judging an organization</span> than its marketing materials.</p>
+    </div>
+    <div class="reveal" style="--delay:.08s">
+      <p class="stat-number">9/10</p>
+      <p class="text-neutral-700 mt-3">are more receptive to sales or marketing outreach from people and companies that <span class="font-semibold">consistently</span> publish high-quality thought leadership.</p>
+    </div>
+    <div class="reveal" style="--delay:.16s">
+      <p class="stat-number">70%</p>
+      <p class="text-neutral-700 mt-3">of C-suite executives say thought leadership made them <span class="font-semibold">reconsider an existing supplier</span>. Someone else's visibility is already aimed at your customers.</p>
+    </div>
+  </div>
+  <p class="reveal text-sm text-neutral-500 mt-8">Source: <a href="https://www.edelman.com/expertise/Business-Marketing/2024-b2b-thought-leadership-report" target="_blank" rel="noopener" class="source-link">2024 Edelman–LinkedIn B2B Thought Leadership Impact Report</a></p>
+
+  <div class="grid md:grid-cols-3 gap-10 mt-16 pt-12 border-t">
+    <div class="reveal">
+      <h3 class="text-2xl font-semibold leading-snug">Consistency is the whole game</h3>
+      <p class="text-neutral-600 mt-3">One article is noise. Buyers reward the people who show up month after month and you have a company to run. The 9-month structure keeps the cadence going when your calendar can't.</p>
+    </div>
+    <div class="reveal" style="--delay:.08s">
+      <h3 class="text-2xl font-semibold leading-snug">The stages are gatekept</h3>
+      <p class="text-neutral-600 mt-3">Podcasts, press and panels don't book themselves, and pitching yourself is a full-time job. We build the features, the podcast and the public stage directly into your membership year.</p>
+    </div>
+    <div class="reveal" style="--delay:.16s">
+      <h3 class="text-2xl font-semibold leading-snug">Credibility is third-party</h3>
+      <p class="text-neutral-600 mt-3">You can't declare yourself a thought leader other rooms and other voices have to do it for you. A vetted peer network of CEOs, CFOs, CTOs and CMOs sharpens your point of view and vouches for it where it counts.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Social proof -->
+<!-- TODO: Swap these placeholder quotes for real member quotes (with permission) before publishing -->
+<section class="max-w-6xl mx-auto px-6 py-16 border-t">
+  <h2 class="reveal text-4xl font-semibold max-w-2xl">What members say.</h2>
+  <div class="grid md:grid-cols-3 gap-6 mt-10">
+    <figure class="reveal quote-card">
+      <p class="quote-mark">"</p>
+      <blockquote class="text-neutral-700 mt-2">I've been to every networking event in Stockholm. This is the only one where I get the visibility, knowledge sharing and relationships that are long lasting.</blockquote>
+      <figcaption class="text-sm text-neutral-500 mt-4 font-medium">CFO, Stockholm fintech scale-up</figcaption>
+    </figure>
+    <figure class="reveal quote-card" style="--delay:.08s">
+      <p class="quote-mark">"</p>
+      <blockquote class="text-neutral-700 mt-2">The room is genuinely closed. No vendors circling, no juniors sent as stand-ins. Everyone at the table carries the same weight you do.</blockquote>
+      <figcaption class="text-sm text-neutral-500 mt-4 font-medium">CEO, B2B payments company</figcaption>
+    </figure>
+    <figure class="reveal quote-card" style="--delay:.16s">
+      <p class="quote-mark">"</p>
+      <blockquote class="text-neutral-700 mt-2">Hosting my own dinner in month 4 did more for my visibility than a year of posting on LinkedIn. The structure works because someone actually holds you to it.</blockquote>
+      <figcaption class="text-sm text-neutral-500 mt-4 font-medium">CTO, embedded finance platform</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="max-w-6xl mx-auto px-6 py-16 border-t">
+  <h2 class="reveal text-4xl font-semibold max-w-2xl">Your 9-month journey.</h2>
+  <p class="reveal text-neutral-600 mt-4 max-w-xl" style="--delay:.05s">From your first goal-setting conversation to a public stage in three phases.</p>
+
+  <div class="mt-6">
+
+    <!-- Phase 1 -->
+    <div class="reveal phase-label">
+      <span class="phase-months">Months 1–3</span>
+      <span class="phase-name">Sharpen your point of view</span>
+    </div>
+
+    <div class="journey-row reveal">
+      <span class="journey-num">01</span>
+      <h3 class="journey-title">Goals &amp; aspirations</h3>
+      <p class="journey-desc">A 1:1 onboarding conversation where you define what visibility means for you this year, the stages you want, the story you want to tell, and what success looks like by month 9.</p>
+    </div>
+
+    <div class="journey-row reveal">
+      <span class="journey-num">02</span>
+      <h3 class="journey-title">Reading discussion group</h3>
+      <p class="journey-desc">A small reading group built around your specific C-suite role: CEOs with CEOs, CFOs with CFOs. Sharpening the perspective you'll soon be putting into the world.</p>
+    </div>
+
+    <div class="journey-row reveal">
+      <span class="journey-num">03</span>
+      <h3 class="journey-title">Podcast &amp; first feature</h3>
+      <p class="journey-desc">Your first media moment. A podcast conversation or a featured article, content you can point to, share, and build on.</p>
+    </div>
+
+    <!-- Phase 2 -->
+    <div class="reveal phase-label">
+      <span class="phase-months">Months 4–6</span>
+      <span class="phase-name">Take the room</span>
+    </div>
+
+    <div class="journey-row reveal">
+      <span class="journey-num">04</span>
+      <h3 class="journey-title">Lead a discussion or dinner</h3>
+      <p class="journey-desc">You step into the host seat, leading a member dinner or discussion on a topic you choose, building the muscle of commanding a room before the bigger stage.</p>
+    </div>
+
+    <div class="journey-row reveal">
+      <span class="journey-num">05</span>
+      <h3 class="journey-title">Co-host an industry event</h3>
+      <p class="journey-desc">You move beyond the closed member group and co-host a larger event alongside Operator Network. Your name in front of the wider Stockholm fintech ecosystem.</p>
+    </div>
+
+    <div class="journey-row reveal">
+      <span class="journey-num">06</span>
+      <h3 class="journey-title">Mentor matching, both ways</h3>
+      <p class="journey-desc">Matched with a mentor further along a path you want to walk and matched as a mentor to someone earlier on theirs. Halfway through the year, you're both receiving and giving.</p>
+    </div>
+
+    <!-- Phase 3 -->
+    <div class="reveal phase-label">
+      <span class="phase-months">Months 7–9</span>
+      <span class="phase-name">Take the stage</span>
+    </div>
+
+    <div class="journey-row reveal">
+      <span class="journey-num">07</span>
+      <h3 class="journey-title">Second feature</h3>
+      <p class="journey-desc">A second round of media coverage, this time shaped by everything you've led and hosted since month 3. The story has grown alongside you.</p>
+    </div>
+
+    <div class="journey-row reveal">
+      <span class="journey-num">08</span>
+      <h3 class="journey-title">Speaking slot on a public stage</h3>
+      <p class="journey-desc">A speaking slot at a public industry event or panel, the dinners, the co-host and the features brought together in one moment, in front of a wider audience.</p>
+    </div>
+
+    <div class="journey-row reveal">
+      <span class="journey-num">09</span>
+      <h3 class="journey-title">Reflect, renew, set next year's goals</h3>
+      <p class="journey-desc">You close the loop with a 1:1 review against your month 1 goals, celebrate the year's wins with the group, and set the next round of goals as you renew.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Research statement — 342x327, pair, square corners -->
+<section class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="reveal text-4xl font-semibold leading-tight max-w-3xl">
+    Decision-makers increasingly treat thought leadership as a vetting tool, most say it's a more trustworthy basis for judging a person or company's expertise than traditional marketing material.
+  </h2>
+  <p class="reveal text-sm text-neutral-400 mt-4" style="--delay:.05s">
+    Source: <a class="source-link" href="https://www.edelman.com/expertise/Business-Marketing/2025-b2b-thought-leadership-report" target="_blank" rel="noopener">2025 Edelman-LinkedIn B2B Thought Leadership Impact Report</a>
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-6 mt-12">
+    <img class="reveal img-pop rounded-none shadow-md w-full aspect-[342/327] object-cover bg-neutral-200"
+         src="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738044/Frame_20_xu6ebv.png" alt="Close-up of executives in conversation at a networking event">
+    <img class="reveal img-pop rounded-none shadow-md w-full aspect-[342/327] object-cover bg-neutral-200"
+         style="--delay:.08s"
+         src="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738045/Frame_24_re4rdo.png" alt="Operator Network members seated at a panel discussion">
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="max-w-6xl mx-auto px-6 py-16 border-t">
+  <h2 class="reveal text-4xl font-semibold">Frequently asked questions.</h2>
+  <div class="grid md:grid-cols-2 gap-x-12 gap-y-10 mt-10">
+    <div class="reveal">
+      <h3 class="text-xl font-semibold">What is Operator Network?</h3>
+      <p class="text-neutral-600 mt-2">Operator Network is a closed, application-only membership community for C-suite executives and founders in Stockholm's tech and fintech industry. It builds each member's thought leadership and executive visibility through a structured 9-month journey of media features, podcast appearances, speaking slots, mentorship and invite-only events.</p>
+    </div>
+    <div class="reveal" style="--delay:.05s">
+      <h3 class="text-xl font-semibold">Who can join Operator Network?</h3>
+      <p class="text-neutral-600 mt-2">Membership is open by application to CEOs, CFOs, CTOs, CMOs and founders working in or around Stockholm's tech and fintech ecosystem. Every application is reviewed for seniority, contribution and fit — the value of the network is who's in it.</p>
+    </div>
+    <div class="reveal" style="--delay:.1s">
+      <h3 class="text-xl font-semibold">What do members get?</h3>
+      <p class="text-neutral-600 mt-2">Each membership year includes two published media features, a podcast appearance, a public speaking slot, a two-way mentor match, a member dinner you host, a wider industry event you co-host, 1:1 goal-setting and review conversations, and full access to every invite-only event we run.</p>
+    </div>
+    <div class="reveal" style="--delay:.15s">
+      <h3 class="text-xl font-semibold">How does the 9-month journey work?</h3>
+      <p class="text-neutral-600 mt-2">Every member moves through the same arc: goal-setting in month 1, a role-based reading group in month 2, a first feature and podcast in month 3, hosting in month 4, co-hosting in month 5, mentor matching in month 6, a second feature in month 7, a public stage in month 8, and review and renewal in month 9.</p>
+    </div>
+    <div class="reveal" style="--delay:.2s">
+      <h3 class="text-xl font-semibold">How much does membership cost?</h3>
+      <p class="text-neutral-600 mt-2">The annual fee is deliberately modest — members are selected for fit, not budget. Full details are shared on the 30-minute application call that starts every membership.</p>
+    </div>
+    <div class="reveal" style="--delay:.25s">
+      <h3 class="text-xl font-semibold">How do I apply?</h3>
+      <p class="text-neutral-600 mt-2">Apply through the <a href="apply.html" class="source-link">application page</a> or <a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener" class="source-link">book a 30-minute application call</a>. Every membership starts with that conversation, and you'll get an honest answer on whether it's a fit.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="mt-8 bg-neutral-950 text-white">
+  <div class="max-w-6xl mx-auto px-6 py-16">
+
+    <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-white/10">
+      <div>
+        <p class="text-2xl font-semibold">Ready to be seen?</p>
+        <p class="text-neutral-400 mt-2 max-w-md">Every membership starts with a 30-minute application call. We'll tell you honestly if it's a fit.</p>
+      </div>
+      <a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener"
+         class="btn-pop inline-flex items-center justify-center bg-white text-black text-sm font-medium px-6 py-3 rounded-full whitespace-nowrap">
+        Book a meeting →
+      </a>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-10 pt-12">
+      <div class="reveal">
+        <a href="/" class="font-bold text-xl tracking-tight">Operator Network</a>
+        <p class="text-neutral-400 text-sm mt-3 max-w-[26ch]">The closed membership community for executive visibility, thought leadership and in-person relationship building in Stockholm.</p>
+        <a href="https://www.linkedin.com/company/77188344" target="_blank" rel="noopener" aria-label="Operator Network on LinkedIn" class="social-icon mt-5">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="reveal" style="--delay:.05s">
+        <p class="text-sm font-semibold text-white uppercase tracking-wide mb-4">Site</p>
+        <ul class="space-y-3 text-sm">
+          <li><a href="conversations.html" class="footer-link">Conversations</a></li>
+          <li><a href="network.html" class="footer-link">Network</a></li>
+          <li><a href="index.html#partners" class="footer-link">Partners</a></li>
+          <li><a href="apply.html" class="footer-link">Apply</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal" style="--delay:.1s">
+        <p class="text-sm font-semibold text-white uppercase tracking-wide mb-4">Newsletters</p>
+        <ul class="space-y-3 text-sm">
+          <li>
+            <a href="https://stockholmgrowthfintech.substack.com/" target="_blank" rel="noopener" class="footer-link">Stockholm Growth &amp; Fintech</a>
+          </li>
+          <li>
+            <a href="https://creativeperformancemarketing.substack.com/" target="_blank" rel="noopener" class="footer-link">Member Stories</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal" style="--delay:.15s">
+        <p class="text-sm font-semibold text-white uppercase tracking-wide mb-4">Connect</p>
+        <ul class="space-y-3 text-sm">
+          <li><a href="https://www.linkedin.com/company/77188344" target="_blank" rel="noopener" class="footer-link">LinkedIn</a></li>
+          <li><a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener" class="footer-link">Book a meeting</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <a href="/" class="reveal wordmark footer-wordmark block mt-16" aria-label="Operator Network home">
+      <span class="wm-line"><span class="wm-inner">Operator</span></span>
+      <span class="wm-line"><span class="wm-inner">Network</span></span>
+    </a>
+
+    <div class="reveal flex flex-col md:flex-row items-center justify-between gap-4 mt-6 pt-8 border-t border-white/10">
+      <p class="text-neutral-400 text-sm">© 2026 Operator Network. All rights reserved.</p>
+      <div class="flex gap-6 text-sm">
+        <a href="conversations.html" class="footer-link">Conversations</a>
+        <a href="network.html" class="footer-link">Network</a>
+        <a href="index.html#partners" class="footer-link">Partners</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var targets = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      targets.forEach(function (t) { t.classList.add('in-view'); });
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    targets.forEach(function (t) { observer.observe(t); });
+  });
+</script>
+
+</body>
+</html>

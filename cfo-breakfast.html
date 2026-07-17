@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CFO Round Table Breakfast | Operator Network Stockholm</title>
+<meta name="description" content="A round table breakfast for 20–25 SaaS CFOs in Stockholm on September 4th. One topic, one hour of real discussion. Hosted by Operator Network.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://operatornetwork.com/cfo-breakfast.html">
+<link rel="icon" href="https://res.cloudinary.com/dxhph3qls/image/upload/v1783066321/favicon_sdfbjr.png" type="image/png">
+<link rel="apple-touch-icon" href="https://res.cloudinary.com/dxhph3qls/image/upload/v1783066321/favicon_sdfbjr.png">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="CFO Round Table Breakfast | Operator Network">
+<meta property="og:description" content="Where Stockholm's SaaS CFOs think out loud. September 4th, central Stockholm. 20–25 seats.">
+<meta property="og:url" content="https://operatornetwork.com/cfo-breakfast.html">
+<meta property="og:image" content="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738044/Frame_18_plhrwm.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CFO Round Table Breakfast | Operator Network">
+<meta name="twitter:description" content="A round table breakfast for Stockholm's SaaS CFOs. September 4th. 20–25 seats.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Event schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BusinessEvent",
+  "name": "CFO Round Table Breakfast",
+  "description": "A round table breakfast for 20–25 SaaS CFOs in Stockholm. Topic: influence on CFOs' reporting judgments and decisions. Hosted by Operator Network.",
+  "startDate": "2026-09-04T08:00:00+02:00",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "Central Stockholm (exact location shared after registration)",
+    "address": { "@type": "PostalAddress", "addressLocality": "Stockholm", "addressCountry": "SE" }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Operator Network",
+    "url": "https://operatornetwork.com/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "100",
+    "priceCurrency": "SEK",
+    "availability": "https://schema.org/LimitedAvailability"
+  },
+  "audience": { "@type": "Audience", "audienceType": "CFOs and financially responsible executives at Stockholm SaaS companies" }
+}
+</script>
+
+<style>
+  html{ scroll-behavior: smooth; }
+  body{ font-family: Inter, sans-serif; }
+
+  .badge{
+    display:inline-flex; align-items:center; padding:6px 14px; border-radius:999px;
+    font-size:.85rem; font-weight:500; white-space:nowrap;
+    background:rgba(0,163,47,0.043); border:1px solid rgba(0,145,64,0.44); color:rgba(0,113,63,0.87);
+    transition: background .35s ease, transform .35s cubic-bezier(.16,1,.3,1);
+  }
+  .badge:hover{ background:rgba(0,163,47,0.09); transform: translateY(-2px); }
+
+  /* Nav links */
+  .nav-link{
+    position:relative; padding:8px 4px; font-size:.92rem; font-weight:500;
+    color: rgb(64,64,64); letter-spacing:.01em;
+    transition: color .3s ease;
+  }
+  .nav-link::after{
+    content:''; position:absolute; left:50%; right:50%; bottom:2px; height:2px;
+    background: rgb(10,10,10); border-radius:2px;
+    transition: left .35s cubic-bezier(.16,1,.3,1), right .35s cubic-bezier(.16,1,.3,1);
+  }
+  .nav-link:hover{ color: rgb(10,10,10); }
+  .nav-link:hover::after{ left:0; right:0; }
+  .nav-link.nav-cta{
+    color:#fff; background:rgb(10,10,10); padding:10px 20px; border-radius:999px;
+    overflow:hidden; transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
+  }
+  .nav-link.nav-cta::after{ display:none; }
+  .nav-link.nav-cta:hover{ color:#fff; transform: translateY(-2px); box-shadow: 0 10px 24px -8px rgba(0,0,0,.45); }
+  .nav-link.nav-cta span{ display:inline-flex; align-items:center; gap:6px; }
+  .nav-link.nav-cta svg{ transition: transform .35s cubic-bezier(.16,1,.3,1); }
+  .nav-link.nav-cta:hover svg{ transform: translateX(3px); }
+
+  .btn-pop{ transition: transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s ease; }
+  .btn-pop:hover{ transform: translateY(-3px) scale(1.03); }
+
+  .img-pop{ transition: transform .6s cubic-bezier(.16,1,.3,1); }
+  .img-pop:hover{ transform: scale(1.015); }
+
+  .source-link{
+    color: rgb(115,115,115); text-decoration: underline; text-decoration-color: rgba(115,115,115,.35);
+    transition: color .25s ease;
+  }
+  .source-link:hover{ color: rgb(38,38,38); }
+
+  /* Scroll reveal */
+  .reveal{
+    opacity:0; transform: translateY(28px);
+    transition: opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1);
+    transition-delay: var(--delay, 0s);
+  }
+  .reveal.in-view{ opacity:1; transform: translateY(0); }
+
+  /* Footer */
+  .footer-link{ color: rgb(163,163,163); transition: color .25s ease; }
+  .footer-link:hover{ color: #fff; }
+  .social-icon{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:38px; height:38px; border-radius:999px; border:1px solid rgba(255,255,255,.25);
+    color: rgb(212,212,212); transition: background .25s ease, color .25s ease, border-color .25s ease, transform .35s cubic-bezier(.16,1,.3,1);
+  }
+  .social-icon:hover{ background:#fff; color: rgb(10,10,10); border-color:#fff; transform: translateY(-2px); }
+
+  /* Brand wordmark (hero + footer) */
+  .wordmark{
+    font-weight:800; letter-spacing:-.045em; line-height:.95;
+    transition: letter-spacing .8s cubic-bezier(.16,1,.3,1);
+  }
+  .wordmark:hover{ letter-spacing:-.02em; }
+  .reveal.wordmark{ opacity:1; transform:none; }
+  .hero-wordmark{ font-size: clamp(2.6rem, 6.5vw, 5.5rem); }
+  .footer-wordmark{ font-size: clamp(3.2rem, 11.5vw, 10rem); line-height:.92; user-select:none; }
+  .wm-line{ display:block; overflow:hidden; }
+  .wm-inner{
+    display:inline-block; transform: translateY(115%);
+    transition: transform 1.1s cubic-bezier(.16,1,.3,1);
+  }
+  .wm-line:nth-child(2) .wm-inner{ transition-delay: .12s; }
+  .wm-line:nth-child(3) .wm-inner{ transition-delay: .24s; }
+  .reveal.in-view .wm-inner{ transform: translateY(0); }
+
+  /* Step numbers */
+  .step-num{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:44px; height:44px; border-radius:999px;
+    border:1.5px solid rgb(10,10,10); font-weight:700; font-size:1rem;
+    flex-shrink:0;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .reveal{ opacity:1; transform:none; transition:none; }
+    .badge:hover, .btn-pop:hover, .img-pop:hover{ transform:none; }
+    .wm-inner{ transform:none; transition:none; }
+    .wordmark, .wordmark:hover{ letter-spacing:-.045em; transition:none; }
+  }
+</style>
+</head>
+<body class="bg-white text-neutral-900">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+  <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="/" class="font-bold text-2xl tracking-tight">Operator Network</a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="conversations.html" class="nav-link">Conversations</a>
+      <a href="network.html" class="nav-link">Network</a>
+      <a href="partners.html" class="nav-link">Partners</a>
+      <button data-fillout-id="qXJs8UWg1xus" data-fillout-embed-type="popup" data-fillout-dynamic-resize data-fillout-inherit-parameters class="nav-link nav-cta cursor-pointer"><span>Apply for a seat <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
+    </nav>
+    <button data-fillout-id="qXJs8UWg1xus" data-fillout-embed-type="popup" data-fillout-dynamic-resize data-fillout-inherit-parameters class="md:hidden bg-black text-white text-sm px-4 py-2 rounded-full btn-pop cursor-pointer">Apply</button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="max-w-6xl mx-auto px-6 pt-20 pb-12">
+  <div class="reveal flex flex-wrap gap-3 mb-8">
+    <span class="badge">4 September</span>
+    <span class="badge">Central Stockholm</span>
+    <span class="badge">100 kr</span>
+    <span class="badge">20–25 seats</span>
+  </div>
+  <h1 class="reveal wordmark hero-wordmark max-w-5xl">
+    <span class="wm-line"><span class="wm-inner">Where Stockholm's SaaS</span></span>
+    <span class="wm-line"><span class="wm-inner">CFOs think out loud</span></span>
+  </h1>
+  <p class="reveal text-lg text-neutral-600 mt-6 max-w-xl" style="--delay:.1s">A round table breakfast for 20–25 finance leaders. One topic, one hour of real discussion. No stage, no pitch. Exact location shared after registration.</p>
+  <div class="reveal mt-8" style="--delay:.2s">
+    <button data-fillout-id="qXJs8UWg1xus" data-fillout-embed-type="popup" data-fillout-dynamic-resize data-fillout-inherit-parameters class="btn-pop inline-flex items-center gap-2 bg-black text-white font-medium px-7 py-3.5 rounded-full cursor-pointer">
+      Apply for a seat
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+  </div>
+  <img class="reveal img-pop rounded-3xl shadow-xl w-full mt-14 aspect-[692/207] object-cover bg-neutral-200"
+       style="--delay:.3s"
+       src="https://res.cloudinary.com/dxhph3qls/image/upload/v1782802448/pexels-reneterp-12919233_r9as78.jpg" alt="Executives in conversation over breakfast in Stockholm">
+</section>
+
+<!-- The premise -->
+<section class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="reveal text-4xl font-semibold leading-tight max-w-3xl">
+    The CFO role has quietly become the most consequential seat in a SaaS company — and the least discussed.
+  </h2>
+  <p class="reveal text-lg text-neutral-600 mt-6 max-w-2xl" style="--delay:.08s">You carry the reporting judgments, the board dynamics, the pressure that arrives sideways from the CEO's office. Rarely do you get to compare notes with peers who carry the same weight. This breakfast exists for that conversation.</p>
+</section>
+
+<!-- The topic -->
+<section class="max-w-6xl mx-auto px-6 py-12">
+  <div class="grid md:grid-cols-2 gap-12 items-start">
+    <div>
+      <p class="reveal text-sm font-medium tracking-wide text-neutral-500 uppercase mb-4">The topic</p>
+      <h2 class="reveal text-3xl md:text-4xl font-semibold leading-tight">Influence on CFOs' reporting judgments and decisions</h2>
+      <p class="reveal text-lg text-neutral-600 mt-6" style="--delay:.08s">We ground the discussion in recent research on how CEO social influence and pressure shape financial reporting — and what experienced CFOs do about it. The reading is shared with all confirmed participants before the breakfast.</p>
+      <p class="reveal text-lg text-neutral-600 mt-4" style="--delay:.12s">It's a topic most CFOs recognize immediately, and almost never discuss openly. That's exactly why we chose it.</p>
+    </div>
+    <img class="reveal img-pop rounded-2xl shadow-md w-full aspect-[342/327] object-cover bg-neutral-200" style="--delay:.1s"
+         src="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738044/Frame_20_xu6ebv.png" alt="Close-up of executives in discussion at a round table">
+  </div>
+</section>
+
+<!-- Lead the round table -->
+<section class="max-w-6xl mx-auto px-6 py-16">
+  <div class="reveal bg-neutral-950 text-white rounded-3xl px-8 md:px-14 py-12 md:py-16">
+    <p class="text-sm font-medium tracking-wide text-neutral-400 uppercase mb-4">Discussion leaders</p>
+    <h2 class="text-3xl md:text-4xl font-semibold leading-tight max-w-2xl">Five CFOs will be selected to lead the round table.</h2>
+    <div class="grid md:grid-cols-2 gap-10 mt-10">
+      <div>
+        <h3 class="text-xl font-semibold">Your role, if chosen</h3>
+        <p class="text-neutral-300 mt-3">Prepare a short summary of trends you've observed in your seat, and three discussion questions that surface the challenges, tensions or unresolved problems you'd genuinely like to hear other CFOs address.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">What it gives you</h3>
+        <p class="text-neutral-300 mt-3">Discussion leaders are photographed and featured in Operator Network's post-event material — a natural, low-effort step into thought leadership, on your terms.</p>
+      </div>
+    </div>
+    <p class="text-neutral-400 text-sm mt-10">We reach out personally if we believe you'd be a strong fit to lead the discussion.</p>
+  </div>
+</section>
+
+<!-- What you take with you -->
+<section class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="reveal text-4xl font-semibold max-w-2xl">What you take with you</h2>
+  <p class="reveal text-lg text-neutral-600 mt-4 max-w-xl" style="--delay:.05s">This isn't a networking event in the usual sense. It's career infrastructure.</p>
+
+  <div class="grid md:grid-cols-2 gap-x-12 gap-y-10 mt-12">
+    <div class="reveal">
+      <h3 class="text-2xl font-semibold">Insight</h3>
+      <p class="text-lg text-neutral-600 mt-3">A sharper read on the dynamics shaping your role — drawn from research, and from peers who face the same decisions you do.</p>
+    </div>
+    <div class="reveal" style="--delay:.06s">
+      <h3 class="text-2xl font-semibold">Visibility</h3>
+      <p class="text-lg text-neutral-600 mt-3">Professional photography and post-event features that build your public profile without you having to perform.</p>
+    </div>
+    <div class="reveal" style="--delay:.12s">
+      <h3 class="text-2xl font-semibold">Practice</h3>
+      <p class="text-lg text-neutral-600 mt-3">A small, senior room is the right place to develop your voice before larger stages.</p>
+    </div>
+    <div class="reveal" style="--delay:.18s">
+      <h3 class="text-2xl font-semibold">Peers</h3>
+      <p class="text-lg text-neutral-600 mt-3">20–25 CFOs from Stockholm's SaaS sector. The kind of relationships that outlast any single breakfast.</p>
+    </div>
+  </div>
+
+  <h2 class="reveal text-3xl md:text-4xl font-semibold leading-tight max-w-3xl mt-16">
+    Strong CFOs are often the least visible people in their companies. We think that should change — carefully, and in the right rooms.
+  </h2>
+</section>
+
+<!-- Who this is for -->
+<section class="max-w-6xl mx-auto px-6 py-16 border-t">
+  <div class="grid md:grid-cols-2 gap-12 items-start">
+    <div>
+      <h2 class="reveal text-4xl font-semibold">Who this is for</h2>
+      <ul class="reveal mt-8 space-y-4 text-lg text-neutral-700" style="--delay:.08s">
+        <li class="flex items-start gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-neutral-900 flex-shrink-0"></span>You are CFO, or the person financially responsible at your company</li>
+        <li class="flex items-start gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-neutral-900 flex-shrink-0"></span>You work in SaaS</li>
+        <li class="flex items-start gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-neutral-900 flex-shrink-0"></span>You're based in Stockholm</li>
+      </ul>
+      <p class="reveal text-lg text-neutral-600 mt-8 max-w-md" style="--delay:.14s">We keep the room deliberately qualified. That's what makes the conversation worth having.</p>
+    </div>
+    <img class="reveal img-pop rounded-2xl shadow-md w-full aspect-[342/327] object-cover bg-neutral-200" style="--delay:.1s"
+         src="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738045/Frame_24_re4rdo.png" alt="Operator Network members seated at a round table discussion">
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="reveal text-4xl font-semibold">How it works</h2>
+  <div class="grid md:grid-cols-4 gap-10 mt-12">
+    <div class="reveal flex flex-col gap-4">
+      <span class="step-num">1</span>
+      <h3 class="text-xl font-semibold">Apply</h3>
+      <p class="text-neutral-600">Submit the short form below.</p>
+    </div>
+    <div class="reveal flex flex-col gap-4" style="--delay:.06s">
+      <span class="step-num">2</span>
+      <h3 class="text-xl font-semibold">Qualify</h3>
+      <p class="text-neutral-600">We review every application to protect the quality of the room.</p>
+    </div>
+    <div class="reveal flex flex-col gap-4" style="--delay:.12s">
+      <span class="step-num">3</span>
+      <h3 class="text-xl font-semibold">Confirm</h3>
+      <p class="text-neutral-600">Qualified applicants receive a Swish link for the 100 kr attendance fee.</p>
+    </div>
+    <div class="reveal flex flex-col gap-4" style="--delay:.18s">
+      <span class="step-num">4</span>
+      <h3 class="text-xl font-semibold">Register</h3>
+      <p class="text-neutral-600">Once paid, you receive the private event registration and the exact address.</p>
+    </div>
+  </div>
+  <p class="reveal text-neutral-500 mt-10 max-w-md" style="--delay:.22s">The 100 kr isn't a revenue model. It's a commitment signal — the room shows up.</p>
+</section>
+
+<!-- Apply / CTA -->
+<section id="apply" class="max-w-6xl mx-auto px-6 py-20">
+  <div class="reveal border rounded-3xl px-8 md:px-14 py-14 text-center">
+    <h2 class="text-3xl md:text-4xl font-semibold leading-tight max-w-2xl mx-auto">One morning. One table. The conversation you've been having alone, finally out loud.</h2>
+    <p class="text-neutral-600 mt-4">4 September · Central Stockholm · 20–25 seats</p>
+    <button data-fillout-id="qXJs8UWg1xus" data-fillout-embed-type="popup" data-fillout-dynamic-resize data-fillout-inherit-parameters class="btn-pop inline-flex items-center gap-2 bg-black text-white font-medium px-8 py-4 rounded-full mt-8 cursor-pointer">
+      Apply for a seat
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+  </div>
+</section>
+
+<footer class="mt-8 bg-neutral-950 text-white">
+  <div class="max-w-6xl mx-auto px-6 py-16">
+
+    <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-white/10">
+      <div>
+        <p class="text-2xl font-semibold">Ready to be seen?</p>
+        <p class="text-neutral-400 mt-2 max-w-md">Book a 30-minute call to see if Operator Network is the right fit for you.</p>
+      </div>
+      <a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener"
+         class="btn-pop inline-flex items-center justify-center bg-white text-black text-sm font-medium px-6 py-3 rounded-full whitespace-nowrap">
+        Book a meeting →
+      </a>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-10 pt-12">
+      <div class="reveal">
+        <a href="/" class="font-bold text-xl tracking-tight">Operator Network</a>
+        <p class="text-neutral-400 text-sm mt-3 max-w-[26ch]">The closed membership community for executive visibility, thought leadership and in-person relationship building in Stockholm.</p>
+        <a href="https://www.linkedin.com/company/77188344" target="_blank" rel="noopener" aria-label="Operator Network on LinkedIn" class="social-icon mt-5">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="reveal" style="--delay:.05s">
+        <p class="text-sm font-semibold text-white uppercase tracking-wide mb-4">Site</p>
+        <ul class="space-y-3 text-sm">
+          <li><a href="conversations.html" class="footer-link">Conversations</a></li>
+          <li><a href="network.html" class="footer-link">Network</a></li>
+          <li><a href="partners.html" class="footer-link">Partners</a></li>
+          <li><a href="apply.html" class="footer-link">Apply</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal" style="--delay:.1s">
+        <p class="text-sm font-semibold text-white uppercase tracking-wide mb-4">Newsletters</p>
+        <ul class="space-y-3 text-sm">
+          <li>
+            <a href="https://stockholmgrowthfintech.substack.com/" target="_blank" rel="noopener" class="footer-link">Stockholm Growth &amp; Fintech</a>
+          </li>
+          <li>
+            <a href="https://creativeperformancemarketing.substack.com/" target="_blank" rel="noopener" class="footer-link">Member Stories</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal" style="--delay:.15s">
+        <p class="text-sm font-semibold text-white uppercase tracking-wide mb-4">Connect</p>
+        <ul class="space-y-3 text-sm">
+          <li><a href="https://www.linkedin.com/company/77188344" target="_blank" rel="noopener" class="footer-link">LinkedIn</a></li>
+          <li><a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener" class="footer-link">Book a meeting</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <a href="/" class="reveal wordmark footer-wordmark block mt-16" aria-label="Operator Network home">
+      <span class="wm-line"><span class="wm-inner">Operator</span></span>
+      <span class="wm-line"><span class="wm-inner">Network</span></span>
+    </a>
+
+    <div class="reveal flex flex-col md:flex-row items-center justify-between gap-4 mt-6 pt-8 border-t border-white/10">
+      <p class="text-neutral-400 text-sm">© 2026 Operator Network. All rights reserved.</p>
+      <div class="flex gap-6 text-sm">
+        <a href="conversations.html" class="footer-link">Conversations</a>
+        <a href="network.html" class="footer-link">Network</a>
+        <a href="partners.html" class="footer-link">Partners</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var targets = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      targets.forEach(function (t) { t.classList.add('in-view'); });
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    targets.forEach(function (t) { observer.observe(t); });
+  });
+</script>
+
+<!-- Fillout popup embed -->
+<script src="https://server.fillout.com/embed/v1/"></script>
+
+</body>
+</html>

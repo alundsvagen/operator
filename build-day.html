@@ -110,7 +110,7 @@
     {
       "@type": "Question",
       "name": "How do teams submit their build at Embedded Finance Build Day?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Submissions are due at 16:00 on 25 August 2026. There are three forms. Teams that built on both Open Payments and Zwapgrid use the joint submission form. Teams that built on Open Payments only use the Open Payments form. Teams that built on Zwapgrid only use the Zwapgrid form. One submission per team, and every submission reaches the full jury." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Submissions are due at 16:00 on 25 August 2026. There is one submission form for every team, at forms.fillout.com/t/dbKZNJsGauus. Builds use both Open Payments and Zwapgrid, so one form reaches both partner teams and the full jury. One submission per team." }
     },
     {
       "@type": "Question",
@@ -125,7 +125,7 @@
     {
       "@type": "Question",
       "name": "Which APIs can you build on at Embedded Finance Build Day?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Teams build on Open Payments, which provides open banking APIs for account data and payment initiation, and Zwapgrid, which provides ERP and financial system connectivity. Open Payments has a dedicated Build Day resource site at buildday.openpayments.io and Zwapgrid has one at zwapgrid.com. Engineers from both companies, including Rasmus Brenter from Open Payments, are on site throughout the day." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Teams build on both Open Payments, which provides open banking APIs for account data and payment initiation, and Zwapgrid, which provides ERP and financial system connectivity. Open Payments has a dedicated Build Day resource site at buildday.openpayments.io and Zwapgrid has one at zwapgrid.com. Engineers from both companies, including Rasmus Brenter from Open Payments, are on site throughout the day." }
     },
     {
       "@type": "Question",
@@ -268,7 +268,7 @@
   .deadline-bar .dl-time{ font-weight:700; letter-spacing:-.01em; }
   .deadline-bar .dl-sep{ width:4px; height:4px; border-radius:999px; background: rgb(180,180,180); }
 
-  /* Submission cards */
+  /* Submission card */
   .submit-card{
     display:flex; flex-direction:column; height:100%;
     border:1px solid rgb(229,229,229); border-radius:24px; padding:30px; background:#fff;
@@ -277,6 +277,8 @@
   .submit-card:hover{ border-color: rgb(10,10,10); transform: translateY(-4px); box-shadow: 0 18px 40px -28px rgba(0,0,0,.55); }
   .submit-card.is-primary{ background: rgb(10,10,10); border-color: rgb(10,10,10); color:#fff; }
   .submit-card.is-primary:hover{ box-shadow: 0 22px 50px -26px rgba(0,0,0,.8); }
+  .submit-card.is-wide{ padding:44px; }
+  @media (min-width: 768px){ .submit-card.is-wide{ padding:56px; } }
   .submit-eyebrow{
     font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color: rgb(140,140,140);
   }
@@ -289,6 +291,7 @@
   }
   .submit-btn:hover{ transform: translateY(-2px); box-shadow: 0 14px 30px -16px rgba(0,0,0,.6); }
   .submit-card.is-primary .submit-btn{ background:#fff; color: rgb(10,10,10); }
+  .submit-btn.is-inline{ width:auto; justify-content:center; padding:16px 30px; }
   .submit-btn svg{ flex-shrink:0; transition: transform .35s cubic-bezier(.16,1,.3,1); }
   .submit-btn:hover svg{ transform: translateX(3px); }
   .submit-aside{ font-size:.88rem; margin-top:14px; }
@@ -447,53 +450,23 @@
 
   <h2 class="reveal text-4xl md:text-5xl font-semibold leading-tight max-w-3xl">Where to submit your build</h2>
   <p class="reveal text-lg text-neutral-600 mt-6 max-w-2xl" style="--delay:.08s">
-    Three routes. Pick the one that matches what your team actually built on. One submission per team, and every submission goes to the full jury. If you are not sure which applies, use the first one.
+    One form for every team. Your build uses both Open Payments and Zwapgrid, so a single submission reaches both partner teams and the full jury. One submission per team.
   </p>
 
-  <div class="grid md:grid-cols-3 gap-6 mt-12 items-stretch">
-
-    <!-- Card 1: both -->
-    <div class="reveal submit-card is-primary">
-      <p class="submit-eyebrow">Route 01</p>
-      <h3 class="text-2xl font-semibold mt-3">You used both technologies</h3>
-      <p class="text-neutral-300 mt-3 mb-8">Your build touches Open Payments and Zwapgrid. One form, and it reaches both partner teams and the whole jury. This is also the right form if you are unsure.</p>
-      <a href="https://form.fillout.com/t/dbKZNJsGauus" target="_blank" rel="noopener" class="submit-btn">
-        Submit a joint build
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-    </div>
-
-    <!-- Card 2: Open Payments -->
-    <div class="reveal submit-card" style="--delay:.06s">
-      <p class="submit-eyebrow">Route 02</p>
-      <h3 class="text-2xl font-semibold mt-3">You used Open Payments</h3>
-      <p class="text-neutral-600 mt-3 mb-8">Open banking account data and payment initiation only. Submit here and Rasmus and the Open Payments team see it alongside the jury.</p>
-      <a href="https://form.fillout.com/t/2beCE1qMoGus" target="_blank" rel="noopener" class="submit-btn">
-        Submit an Open Payments build
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-      <p class="submit-aside text-neutral-500">
-        API docs and Build Day resources live at <a class="source-link" href="https://buildday.openpayments.io/" target="_blank" rel="noopener">buildday.openpayments.io</a>.
-      </p>
-    </div>
-
-    <!-- Card 3: Zwapgrid -->
-    <div class="reveal submit-card" style="--delay:.12s">
-      <p class="submit-eyebrow">Route 03</p>
-      <h3 class="text-2xl font-semibold mt-3">You used Zwapgrid</h3>
-      <p class="text-neutral-600 mt-3 mb-8">ERP and financial system connectivity only. Submit here and the Zwapgrid engineering team sees it alongside the jury.</p>
-      <a href="https://form.fillout.com/t/qpEMyG2Qrtus" target="_blank" rel="noopener" class="submit-btn">
-        Submit a Zwapgrid build
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-      <p class="submit-aside text-neutral-500">
-        API guides and Build Day resources live at <a class="source-link" href="https://www.zwapgrid.com/embedded-finance-25-august-2026" target="_blank" rel="noopener">zwapgrid.com</a>.
-      </p>
-    </div>
+  <div class="reveal submit-card is-primary is-wide mt-12" style="--delay:.12s">
+    <p class="submit-eyebrow">The submission form</p>
+    <h3 class="text-3xl md:text-4xl font-semibold mt-3 max-w-2xl">Submit your build</h3>
+    <p class="text-neutral-300 mt-4 mb-9 max-w-2xl">
+      Include a working demo link or repo, one sentence on the problem you took on, and your team name. Every submission goes to the whole jury, and to the Open Payments and Zwapgrid engineering teams.
+    </p>
+    <a href="https://forms.fillout.com/t/dbKZNJsGauus" target="_blank" rel="noopener" class="submit-btn is-inline">
+      Open the submission form
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
   </div>
 
   <p class="reveal text-neutral-500 mt-8 text-sm max-w-2xl" style="--delay:.16s">
-    Include a working demo link or repo, one sentence on the problem you took on, and your team name. Anything broken on submission day goes to <a class="source-link" href="mailto:alexandra@alexandrastudio.se">alexandra@alexandrastudio.se</a>.
+    API docs and Build Day resources live at <a class="source-link" href="https://buildday.openpayments.io/" target="_blank" rel="noopener">buildday.openpayments.io</a> and <a class="source-link" href="https://www.zwapgrid.com/embedded-finance-25-august-2026" target="_blank" rel="noopener">zwapgrid.com</a>. Anything broken on submission day goes to <a class="source-link" href="mailto:alexandra@alexandrastudio.se">alexandra@alexandrastudio.se</a>.
   </p>
 </section>
 
@@ -528,7 +501,7 @@
   <p class="reveal text-sm font-medium tracking-wide text-neutral-500 uppercase mb-4">Technology partners</p>
   <h2 class="reveal text-4xl md:text-5xl font-semibold leading-tight max-w-3xl">The two APIs you build on.</h2>
   <p class="reveal text-lg text-neutral-600 mt-6 max-w-2xl" style="--delay:.08s">
-    Create your accounts and test the connections before 25 August. Both teams have engineers on the floor all day, so bring the questions you could not answer at your desk.
+    Every build uses both. Create your accounts and test the connections before 25 August. Both teams have engineers on the floor all day, so bring the questions you could not answer at your desk.
   </p>
 
   <div class="grid md:grid-cols-2 gap-6 mt-12">
@@ -791,7 +764,7 @@
         <div class="agenda-row"><span class="agenda-time">09:00</span><span class="text-neutral-600">Briefing. The problems, the APIs, the rules of the day</span></div>
         <div class="agenda-row"><span class="agenda-time">09:30</span><span class="text-neutral-600">Build starts, with mentors from all five partners on the floor</span></div>
         <div class="agenda-row"><span class="agenda-time">12:00</span><span class="text-neutral-600">Lunch inspiration series. Froda, Worldline's AI Café, Danske Bank, Stockholm Growth &amp; Fintech</span></div>
-        <div class="agenda-row is-key"><span class="agenda-time">16:00</span><span class="text-neutral-600"><a href="#submit" class="underline underline-offset-4 decoration-neutral-400 hover:decoration-neutral-900">Submissions due</a>. Three routes, depending on which APIs you used</span></div>
+        <div class="agenda-row is-key"><span class="agenda-time">16:00</span><span class="text-neutral-600"><a href="#submit" class="underline underline-offset-4 decoration-neutral-400 hover:decoration-neutral-900">Submissions due</a>. One form, one submission per team</span></div>
         <div class="agenda-row"><span class="agenda-time">17:00</span><span class="text-neutral-600">Presentations. Eight teams are selected to present on stage</span></div>
         <div class="agenda-row"><span class="agenda-time">19:00</span><span class="text-neutral-600">The jury gives feedback and chooses the winner</span></div>
         <div class="agenda-row"><span class="agenda-time">20:00</span><span class="text-neutral-600">Doors close</span></div>
@@ -892,7 +865,7 @@
   <div class="grid md:grid-cols-2 gap-x-12 gap-y-10 mt-12">
     <div class="reveal">
       <h3 class="text-xl font-semibold">How do we submit our build?</h3>
-      <p class="text-neutral-600 mt-2">By 16:00 on 25 August, through one of <a class="source-link" href="#submit">three forms</a>: the joint form if you used both technologies, the Open Payments form if you used Open Payments only, or the Zwapgrid form if you used Zwapgrid only. One submission per team, and the whole jury sees all of them.</p>
+      <p class="text-neutral-600 mt-2">By 16:00 on 25 August, through <a class="source-link" href="#submit">one submission form</a>. Builds use both Open Payments and Zwapgrid, so a single submission reaches both partner teams and the whole jury. One submission per team.</p>
     </div>
     <div class="reveal" style="--delay:.05s">
       <h3 class="text-xl font-semibold">What is in the inspiration packet?</h3>
@@ -900,7 +873,7 @@
     </div>
     <div class="reveal" style="--delay:.1s">
       <h3 class="text-xl font-semibold">Which APIs will teams build on?</h3>
-      <p class="text-neutral-600 mt-2">Open Payments for open banking account data and payment initiation, and Zwapgrid for ERP and financial system connectivity. Create accounts with both before the day and bring your questions. Rasmus Brenter and the Open Payments team, and the Zwapgrid engineers, are on site throughout.</p>
+      <p class="text-neutral-600 mt-2">Both. Open Payments for open banking account data and payment initiation, and Zwapgrid for ERP and financial system connectivity. Create accounts with both before the day and bring your questions. Rasmus Brenter and the Open Payments team, and the Zwapgrid engineers, are on site throughout.</p>
     </div>
     <div class="reveal" style="--delay:.15s">
       <h3 class="text-xl font-semibold">Who is on the jury?</h3>
@@ -922,10 +895,10 @@
   <div class="reveal border rounded-3xl px-8 md:px-14 py-14 text-center">
     <span class="badge badge-solid mb-6"><span class="pulse-dot"></span>Submissions close 25 August, 16:00</span>
     <h2 class="text-3xl md:text-4xl font-semibold leading-tight max-w-2xl mx-auto">Built something today? Get it in front of the jury.</h2>
-    <p class="text-neutral-600 mt-4">Three routes, depending on which APIs your team used. One submission per team.</p>
-    <a href="#submit"
+    <p class="text-neutral-600 mt-4">One form for every team. One submission per team.</p>
+    <a href="https://forms.fillout.com/t/dbKZNJsGauus" target="_blank" rel="noopener"
        class="btn-pop inline-flex items-center gap-2 bg-black text-white font-medium px-8 py-4 rounded-full mt-8">
-      Go to the submission links
+      Submit your build
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
     </a>
     <p class="text-sm text-neutral-500 mt-4">25 August 2026 · A House, Stadsgården 6, Slussen · kl 08–20</p>
@@ -960,7 +933,7 @@
       <div class="reveal" style="--delay:.05s">
         <p class="text-sm font-semibold text-white uppercase tracking-wide mb-4">Build Day</p>
         <ul class="space-y-3 text-sm">
-          <li><a href="#submit" class="footer-link">Submit your build</a></li>
+          <li><a href="https://forms.fillout.com/t/dbKZNJsGauus" target="_blank" rel="noopener" class="footer-link">Submit your build</a></li>
           <li><a href="https://theoperatornetwork.se/inspiration.pdf" target="_blank" rel="noopener" class="footer-link">Inspiration packet (PDF)</a></li>
           <li><a href="https://buildday.openpayments.io/" target="_blank" rel="noopener" class="footer-link">Open Payments resources</a></li>
           <li><a href="https://www.zwapgrid.com/embedded-finance-25-august-2026" target="_blank" rel="noopener" class="footer-link">Zwapgrid resources</a></li>
@@ -1009,7 +982,7 @@
     <p class="text-sm font-semibold leading-tight">Submissions due 16:00</p>
     <p class="text-xs text-neutral-500 leading-tight">25 August</p>
   </div>
-  <a href="#submit" class="bg-black text-white text-sm font-medium px-5 py-2.5 rounded-full whitespace-nowrap">Submit</a>
+  <a href="https://forms.fillout.com/t/dbKZNJsGauus" target="_blank" rel="noopener" class="bg-black text-white text-sm font-medium px-5 py-2.5 rounded-full whitespace-nowrap">Submit</a>
 </div>
 
 <script>

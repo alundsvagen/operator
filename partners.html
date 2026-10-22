@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Partner With Operator Network | Sponsorship That Puts You in the Room</title>
-<meta name="description" content="Sponsor an Operator Network event and meet a curated room of senior executives matched to exactly who you sell to. One sponsor per event, hosted by a neutral curator. Contact for full sponsorship details.">
+<title>Partners | Operator Network — Our Rooms Aren't for Sale</title>
+<meta name="description" content="The Operator Network doesn't sell sponsorship. Partners build rooms with us: APIs and engineers at build days, mentors and jurors, and conference stages. Companies that want to meet specific buyers work with Alexandra Studio.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="https://operatornetwork.se/partners.html">
+<link rel="canonical" href="https://theoperatornetwork.se/partners.html">
 <link rel="icon" href="https://res.cloudinary.com/dxhph3qls/image/upload/v1783066321/favicon_sdfbjr.png" type="image/png">
 <link rel="apple-touch-icon" href="https://res.cloudinary.com/dxhph3qls/image/upload/v1783066321/favicon_sdfbjr.png">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Partner With Operator Network">
-<meta property="og:description" content="Real people, real conversations, real pipeline building. Creating Real moments with Potential Partners, in Real Life.">
-<meta property="og:url" content="https://operatornetwork.se/partners.html">
+<meta property="og:title" content="Partners | Operator Network">
+<meta property="og:description" content="Our rooms aren't for sale. Partners build them with us.">
+<meta property="og:url" content="https://theoperatornetwork.se/partners.html">
 <meta property="og:image" content="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738044/Frame_18_plhrwm.png">
 <meta property="og:site_name" content="Operator Network">
 <meta property="og:locale" content="en_SE">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Partner With Operator Network">
-<meta name="twitter:description" content="Creating Real moments with Potential Partners, in Real Life.">
+<meta name="twitter:title" content="Partners | Operator Network">
+<meta name="twitter:description" content="Our rooms aren't for sale. Partners build them with us.">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -162,35 +162,18 @@
     .wordmark, .wordmark:hover{ letter-spacing:-.045em; transition:none; }
     .logo-marquee-track{ animation:none; flex-wrap:wrap; width:auto; justify-content:center; }
     .logo-marquee{ -webkit-mask-image:none; mask-image:none; }
-    .visibility-modal-backdrop, .visibility-modal-panel{ transition:none; }
-    .visibility-modal-panel{ transform:none; opacity:1; }
-    .visibility-modal-close:hover{ transform:none; }
   }
 
-  /* Visibility package form modal */
-  .visibility-modal{ position:fixed; inset:0; z-index:100; display:none; align-items:center; justify-content:center; padding:1rem; }
-  .visibility-modal.open{ display:flex; }
-  .visibility-modal-backdrop{
-    position:absolute; inset:0; background:rgba(10,10,10,.62); backdrop-filter: blur(4px);
-    opacity:0; transition: opacity .3s ease;
-  }
-  .visibility-modal.open .visibility-modal-backdrop{ opacity:1; }
-  .visibility-modal-panel{
-    position:relative; width:min(680px, 100%); height:min(85vh, 760px);
-    background:#fff; border-radius:1.5rem; overflow:hidden;
-    box-shadow: 0 40px 80px -24px rgba(0,0,0,.5);
-    transform: translateY(18px) scale(.98); opacity:0;
-    transition: transform .45s cubic-bezier(.16,1,.3,1), opacity .35s ease;
-  }
-  .visibility-modal.open .visibility-modal-panel{ transform: translateY(0) scale(1); opacity:1; }
-  .visibility-modal-panel iframe{ width:100%; height:100%; border:0; display:block; }
-  .visibility-modal-close{
-    position:absolute; top:12px; right:12px; z-index:1;
-    width:38px; height:38px; border-radius:999px; background:rgb(10,10,10); color:#fff;
-    display:flex; align-items:center; justify-content:center; font-size:1.15rem; line-height:1;
-    transition: transform .3s cubic-bezier(.16,1,.3,1);
-  }
-  .visibility-modal-close:hover{ transform: rotate(90deg); }
+  /* FAQ */
+  .faq details{ border-bottom:1px solid var(--hair); }
+  .faq summary{ cursor:pointer; list-style:none; padding:1.25rem 2.5rem 1.25rem 0; position:relative; font-weight:600; font-size:1.1rem; }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq summary::after{ content:'+'; position:absolute; right:.25rem; top:1rem; font-size:1.5rem; font-weight:400; color:var(--ink-dim); }
+  .faq details[open] summary::after{ content:'–'; }
+  .faq details p{ color:var(--ink-dim); padding-bottom:1.25rem; max-width:62ch; }
+  .faq summary:focus-visible{ outline:2px solid var(--ink); outline-offset:2px; border-radius:6px; }
+  .text-link{ text-decoration:underline; text-underline-offset:3px; text-decoration-color:rgba(245,234,214,.4); }
+  .text-link:hover{ text-decoration-color:var(--ink); }
 </style>
 
 <script type="application/ld+json">
@@ -199,31 +182,75 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://operatornetwork.se/partners.html",
-      "url": "https://operatornetwork.se/partners.html",
-      "name": "Partner With Operator Network",
-      "description": "Sponsorship of Operator Network's closed executive events in Stockholm: a curated room of senior executives matched to the sponsor's target profile, with the event hosted and run by Operator Network as a neutral curator. One sponsor per event. Contact Operator Network for full details on what sponsorship includes.",
+      "@id": "https://theoperatornetwork.se/partners.html",
+      "url": "https://theoperatornetwork.se/partners.html",
+      "name": "Partners | Operator Network",
+      "description": "The Operator Network does not sell sponsorship. Partners build rooms with the network: APIs and engineers at build days, mentors and jurors, and conference stages. Companies that want to meet specific buyers work with Alexandra Studio.",
       "inLanguage": "en",
-      "isPartOf": { "@id": "https://operatornetwork.se/#organization" },
-      "about": { "@id": "https://operatornetwork.se/#organization" },
-      "breadcrumb": { "@id": "https://operatornetwork.se/partners.html#breadcrumb" }
+      "isPartOf": {
+        "@id": "https://theoperatornetwork.se/#organization"
+      },
+      "about": {
+        "@id": "https://theoperatornetwork.se/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://theoperatornetwork.se/partners.html#breadcrumb"
+      }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://operatornetwork.se/partners.html#breadcrumb",
+      "@id": "https://theoperatornetwork.se/partners.html#breadcrumb",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://operatornetwork.se/" },
-        { "@type": "ListItem", "position": 2, "name": "Partners", "item": "https://operatornetwork.se/partners.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://theoperatornetwork.se/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Partners",
+          "item": "https://theoperatornetwork.se/partners.html"
+        }
       ]
     },
     {
-      "@type": "Service",
-      "@id": "https://operatornetwork.se/partners.html#sponsorship",
-      "name": "Operator Network Event Sponsorship",
-      "serviceType": "B2B event sponsorship",
-      "provider": { "@id": "https://operatornetwork.se/#organization" },
-      "areaServed": { "@type": "City", "name": "Stockholm" },
-      "description": "Per-event sponsorship of Operator Network's closed executive events in Stockholm: a curated room of senior executives matched to the sponsor's target profile, an introduction at the event, and full event production handled by Operator Network as a neutral host. One sponsor per event. Contact Operator Network for full details on what sponsorship includes."
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can my company sponsor an Operator Network event?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The Operator Network does not sell sponsorship, seats or agenda time. Executives come to its rooms because no vendor pays to be there. Companies that want a room with a specific group of buyers work with Alexandra Studio instead, and those events run under the company's own name."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does an Operator Network partner do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Partners build rooms with the network. Technology partners bring APIs, sandboxes and engineers to build days, as Open Payments and Zwapgrid did at the Embedded Finance Build Day. Industry partners lend experts as mentors, jurors or discussion leads, as Danske Bank, Worldline and Froda did. Conference organisers and ecosystem groups offer stages where network members speak."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do partners get?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Credit and a shared result: partners are named on the event page and thanked in the room, and they get the work built or discussed on the day. They do not get a paid seat, a sponsored slot on the agenda or the guest list."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is the Operator Network related to Alexandra Studio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both are run by Alexandra Grisanti. The Operator Network is the community and stage and is never sold. Alexandra Studio is the paid B2B growth studio that builds rooms for fintech companies, hosted under the client's name."
+          }
+        }
+      ]
     }
   ]
 }
@@ -250,14 +277,13 @@
 <!-- Hero -->
 <section class="max-w-6xl mx-auto px-6 pt-20 pb-16">
   <p class="reveal badge">Partners</p>
-  <h1 class="reveal text-6xl font-bold leading-[1.05] max-w-3xl mt-6">Real people, real conversations, real pipeline building.</h1>
-  <p class="reveal text-lg text-[#F5EAD6]/70 mt-6 max-w-xl" style="--delay:.1s">Your buyers are in our rooms. Sponsor an Operator Network event and we put you at the table with a curated, confirmed group of senior executives — matched to exactly who you sell to.</p>
+  <h1 class="reveal text-6xl font-bold leading-[1.05] max-w-3xl mt-6">Our rooms aren't for sale.</h1>
+  <p class="reveal text-lg text-[#F5EAD6]/70 mt-6 max-w-xl" style="--delay:.1s">The Operator Network doesn't sell sponsorship, seats or time on the agenda. Executives come to our rooms because no vendor is paying to be there. Our partners are the organisations that build the rooms with us.</p>
   <div class="reveal flex flex-wrap gap-4 mt-8" style="--delay:.2s">
-    <a href="mailto:alexandra@alexandrastudio.se?subject=Sponsorship%20details" class="btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full">Send me the details →</a>
-    <a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener" class="btn-pop btn-ghost inline-flex items-center justify-center text-sm font-medium px-6 py-3 rounded-full">Book a meeting</a>
+    <a href="mailto:alexandra@alexandrastudio.se?subject=Operator%20Network%20partnership" class="btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full">Become a partner →</a>
+    <a href="https://alexandrastudio.se/how-alexandra-studio-works.html" class="btn-pop btn-ghost inline-flex items-center justify-center text-sm font-medium px-6 py-3 rounded-full">Want a room with your buyers?</a>
   </div>
 
-  <!-- TODO: swap these for your best event photos -->
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-14">
     <img class="reveal img-pop rounded-3xl w-full aspect-[4/3] object-cover" src="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738043/Frame_17_thfubm.png" alt="Executives in conversation at an Operator Network event">
     <img class="reveal img-pop rounded-3xl w-full aspect-[4/3] object-cover" style="--delay:.08s" src="https://res.cloudinary.com/dxhph3qls/image/upload/v1782738044/Frame_18_plhrwm.png" alt="A curated roundtable discussion at an Operator Network breakfast">
@@ -265,81 +291,59 @@
   </div>
 </section>
 
-<!-- Pull stat -->
+<!-- What partners do -->
 <section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
-  <!-- TODO: add a source for this stat if you have one -->
-  <p class="reveal pull-stat md:text-right md:ml-auto max-w-3xl md:pl-10">90% of C-level executives say they never respond to cold calls or email blasts.</p>
-  <p class="reveal text-[#F5EAD6]/60 mt-4 md:text-right" style="--delay:.05s">The room is the channel that still works.</p>
-</section>
-
-<!-- Reach stats -->
-<section class="max-w-6xl mx-auto px-6 py-14 border-t border-[#F5EAD6]/15">
-  <!-- TODO: keep these numbers current -->
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
-    <div class="reveal">
-      <p class="stat-number">1,600</p>
-      <p class="stat-label">Newsletter subscribers</p>
-    </div>
-    <div class="reveal" style="--delay:.08s">
-      <p class="stat-number">+100</p>
-      <p class="stat-label">Builders ready to build</p>
-    </div>
-    <div class="reveal" style="--delay:.16s">
-      <p class="stat-number">+30</p>
-      <p class="stat-label">Executives in the room</p>
-    </div>
-  </div>
-</section>
-
-<!-- What sponsorship includes -->
-<section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
-  <h2 class="reveal text-4xl font-semibold max-w-2xl">Creating Real moments with Potential Partners, in Real Life.</h2>
-  <p class="reveal text-[#F5EAD6]/70 mt-4 max-w-xl" style="--delay:.05s">Sponsorship is per event. Here's the shape of it:</p>
+  <h2 class="reveal text-4xl font-semibold max-w-2xl">What partners do.</h2>
+  <p class="reveal text-[#F5EAD6]/70 mt-4 max-w-xl" style="--delay:.05s">Partnership means building something together, not buying access. Three ways it works:</p>
 
   <div class="mt-6">
     <div class="journey-row reveal">
       <span class="journey-num">01</span>
-      <h3 class="journey-title">A curated room</h3>
-      <p class="journey-desc">Senior executives matched to exactly who you sell to — curated by us, in a format the room already trusts.</p>
+      <h3 class="journey-title">Build with us</h3>
+      <p class="journey-desc">Bring your APIs, sandboxes and engineers to a build day. At the <a href="build-day.html" class="text-link">Embedded Finance Build Day</a>, Open Payments and Zwapgrid provided the banking APIs every team built on.</p>
     </div>
     <div class="journey-row reveal">
       <span class="journey-num">02</span>
-      <h3 class="journey-title">Your moment in it</h3>
-      <p class="journey-desc">You're introduced by us, to a room that's actually listening. Enough to be known — never enough to feel like an ad.</p>
+      <h3 class="journey-title">Bring your people</h3>
+      <p class="journey-desc">Lend your experts as mentors, jurors or discussion leads. Danske Bank, Worldline and Froda sent mentors to the Build Day, and their leaders sat on the jury.</p>
     </div>
     <div class="journey-row reveal">
       <span class="journey-num">03</span>
-      <h3 class="journey-title">Everything handled</h3>
-      <p class="journey-desc">You show up to the conversation. We run everything around it — and make sure it keeps working for you after the room empties.</p>
+      <h3 class="journey-title">Open a stage</h3>
+      <p class="journey-desc">Conference organisers and ecosystem groups give network members a platform: a panel, a delegation, a speaking slot.</p>
     </div>
   </div>
-
-  <p class="reveal text-[#F5EAD6]/70 mt-10 max-w-xl">There's more to it than fits on a page. Contact us for the full details on what sponsorship includes.</p>
-  <a href="mailto:alexandra@alexandrastudio.se?subject=Sponsorship%20details" class="reveal btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full mt-6" style="--delay:.05s">Contact for details →</a>
 </section>
 
-<!-- Neutral host -->
+<!-- What partners don't get -->
 <section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
-  <h2 class="reveal text-4xl font-semibold leading-tight max-w-3xl">We keep the focus on thought leadership.<br>That's why it works.</h2>
-  <p class="reveal text-lg text-[#F5EAD6]/70 mt-6 max-w-2xl" style="--delay:.05s">Executives show up to our events because the curation is independent, no vendor runs the agenda, no pitch hides in the programming. Sponsorship doesn't buy co-hosting, branding or control of the format. It buys something worth more: a seat in a room that trusts its host, with the people you want to meet.</p>
+  <h2 class="reveal text-4xl font-semibold leading-tight max-w-3xl">Credit, yes. A paid seat, no.</h2>
+  <p class="reveal text-lg text-[#F5EAD6]/70 mt-6 max-w-2xl" style="--delay:.05s">Partners are named on the event page and thanked in the room, and they share in what gets built or discussed on the day. They don't get a seat at the table, a sponsored slot on the agenda or the guest list. That independence is the reason executives keep coming back.</p>
+</section>
+
+<!-- Alexandra Studio -->
+<section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
+  <h2 class="reveal text-4xl font-semibold leading-tight max-w-3xl">Want to meet a specific group of buyers?</h2>
+  <p class="reveal text-lg text-[#F5EAD6]/70 mt-6 max-w-2xl" style="--delay:.05s">That's a different job, and it's done by <a href="https://alexandrastudio.se/" class="text-link">Alexandra Studio</a>, the B2B growth studio run by the Operator Network's founder, Alexandra Grisanti. Alexandra Studio designs a room around the accounts you name and runs it under your company's name, with a co-host your buyers already trust. Your company is named as host on the invitation, so guests always know who invited them.</p>
+  <a href="https://alexandrastudio.se/how-alexandra-studio-works.html" class="reveal btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full mt-8" style="--delay:.1s">See how Alexandra Studio works →</a>
 </section>
 
 <!-- In the room -->
 <section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
   <h2 class="reveal text-4xl font-semibold">In the room.</h2>
-  <p class="reveal text-[#F5EAD6]/70 mt-4 max-w-xl" style="--delay:.05s">CEOs, CFOs, CTOs and CMOs from Stockholm tech: AI, fintech and SaaS companies from seed to scale-up.</p>
+  <p class="reveal text-[#F5EAD6]/70 mt-4 max-w-xl" style="--delay:.05s">CEOs, CFOs, CTOs and CMOs from Stockholm tech: AI, fintech and SaaS companies from seed to scale-up. Read more in <a href="what-is-the-operator-network.html" class="text-link">What is the Operator Network?</a></p>
 </section>
 
-<!-- Partners and sponsors -->
+<!-- Partners -->
 <section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
   <h2 class="reveal text-4xl font-semibold">Thank you to our Partners</h2>
   <!-- TODO: fill in the correct company name in each alt attribute -->
   <div class="reveal logo-marquee mt-10" style="--delay:.05s">
     <div class="logo-marquee-track">
-      <div class="logo-card"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/logo-black_ajncky.svg" alt="Sponsorship partner logo" loading="lazy"></div>
+      <div class="logo-card"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/logo-black_ajncky.svg" alt="Partner logo" loading="lazy"></div>
       <div class="logo-card"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/zwapgrip-logo_nmbe6a.webp" alt="Zwapgrid logo" loading="lazy"></div>
-      <div class="logo-card"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/64edcd7f7c2a913505d627a0_Beige_-_Darkblue-1000w_p26mrw.png" alt="Sponsorship partner logo" loading="lazy"></div>
-      <div class="logo-card"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080957/dPHg1IGArtMHUYLmHAWQ1GcARP4_gjhscr.avif" alt="Sponsorship partner logo" loading="lazy"></div>
+      <div class="logo-card"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/64edcd7f7c2a913505d627a0_Beige_-_Darkblue-1000w_p26mrw.png" alt="Partner logo" loading="lazy"></div>
+      <div class="logo-card"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080957/dPHg1IGArtMHUYLmHAWQ1GcARP4_gjhscr.avif" alt="Partner logo" loading="lazy"></div>
       <div class="logo-card" aria-hidden="true"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/logo-black_ajncky.svg" alt="" loading="lazy"></div>
       <div class="logo-card" aria-hidden="true"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/zwapgrip-logo_nmbe6a.webp" alt="" loading="lazy"></div>
       <div class="logo-card" aria-hidden="true"><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/64edcd7f7c2a913505d627a0_Beige_-_Darkblue-1000w_p26mrw.png" alt="" loading="lazy"></div>
@@ -348,38 +352,34 @@
   </div>
 </section>
 
-<!-- Pull stat 2 -->
+<!-- FAQ -->
 <section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
-  <!-- TODO: add a source for this stat if you have one -->
-  <p class="reveal pull-stat max-w-3xl">73% of B2B marketing executives rank peer recommendations as the most influential factor when considering a vendor.</p>
-  <p class="reveal text-[#F5EAD6]/60 mt-4" style="--delay:.05s">A room full of peers, talking. That's the recommendation engine.</p>
-</section>
-
-<!-- CTA: become a partner -->
-<section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
-  <h2 class="reveal text-4xl font-semibold leading-tight max-w-3xl">Find out more.<br> Become a partner.</h2>
-  <a href="mailto:alexandra@alexandrastudio.se?subject=Sponsorship%20details" class="reveal btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full mt-8" style="--delay:.1s">Send details →</a>
-</section>
-
-<!-- Fractional CMO -->
-<section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
-  <h2 class="reveal text-4xl font-semibold leading-tight max-w-3xl">Get deeper, hands-on Fractional CMO help.</h2>
-  <p class="reveal text-[#F5EAD6]/70 mt-4 max-w-xl" style="--delay:.05s">Beyond the room: positioning, go-to-market and visibility work, done with you.</p>
-  <div class="reveal flex flex-wrap gap-4 mt-8" style="--delay:.1s">
-    <a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener" class="btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full">Book a meeting →</a>
-    <a href="https://forms.fillout.com/t/3qKXiWsu26us" target="_blank" rel="noopener" class="js-open-visibility btn-pop btn-ghost inline-flex items-center justify-center text-sm font-medium px-6 py-3 rounded-full">Send visibility package</a>
+  <h2 class="reveal text-4xl font-semibold">Questions partners ask.</h2>
+  <div class="reveal faq mt-8 border-t border-[#F5EAD6]/15">
+      <details>
+        <summary>Can my company sponsor an Operator Network event?</summary>
+        <p>No. The Operator Network does not sell sponsorship, seats or agenda time. Executives come to its rooms because no vendor pays to be there. Companies that want a room with a specific group of buyers work with Alexandra Studio instead, and those events run under the company's own name.</p>
+      </details>
+      <details>
+        <summary>What does an Operator Network partner do?</summary>
+        <p>Partners build rooms with the network. Technology partners bring APIs, sandboxes and engineers to build days, as Open Payments and Zwapgrid did at the Embedded Finance Build Day. Industry partners lend experts as mentors, jurors or discussion leads, as Danske Bank, Worldline and Froda did. Conference organisers and ecosystem groups offer stages where network members speak.</p>
+      </details>
+      <details>
+        <summary>What do partners get?</summary>
+        <p>Credit and a shared result: partners are named on the event page and thanked in the room, and they get the work built or discussed on the day. They do not get a paid seat, a sponsored slot on the agenda or the guest list.</p>
+      </details>
+      <details>
+        <summary>How is the Operator Network related to Alexandra Studio?</summary>
+        <p>Both are run by Alexandra Grisanti. The Operator Network is the community and stage and is never sold. Alexandra Studio is the paid B2B growth studio that builds rooms for fintech companies, hosted under the client's name.</p>
+      </details>
   </div>
 </section>
 
-
-<!-- Visibility package form modal -->
-<div id="visibility-modal" class="visibility-modal" role="dialog" aria-modal="true" aria-label="Request the visibility package">
-  <div class="visibility-modal-backdrop" data-close-visibility></div>
-  <div class="visibility-modal-panel">
-    <button type="button" class="visibility-modal-close" data-close-visibility aria-label="Close form">✕</button>
-    <iframe data-src="https://forms.fillout.com/t/3qKXiWsu26us" title="Visibility package request form"></iframe>
-  </div>
-</div>
+<!-- CTA -->
+<section class="max-w-6xl mx-auto px-6 py-16 border-t border-[#F5EAD6]/15">
+  <h2 class="reveal text-4xl font-semibold leading-tight max-w-3xl">Build something with us.</h2>
+  <a href="mailto:alexandra@alexandrastudio.se?subject=Operator%20Network%20partnership" class="reveal btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full mt-8" style="--delay:.1s">Become a partner →</a>
+</section>
 
 </main>
 
@@ -388,8 +388,8 @@
 
     <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-[#F5EAD6]/15">
       <div>
-        <p class="text-2xl font-semibold">Ready to meet your audience?</p>
-        <p class="text-[#F5EAD6]/60 mt-2 max-w-md">Sponsorship starts with a 30-minute conversation about who you need in the room.</p>
+        <p class="text-2xl font-semibold">Want to build something with us?</p>
+        <p class="text-[#F5EAD6]/60 mt-2 max-w-md">Partnerships start with a 30-minute conversation about what we could build together.</p>
       </div>
       <a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener"
          class="btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full whitespace-nowrap">
@@ -415,6 +415,7 @@
           <li><a href="network.html" class="footer-link">Network</a></li>
           <li><a href="partners.html" class="footer-link">Partners</a></li>
           <li><a href="apply.html" class="footer-link">Apply</a></li>
+          <li><a href="what-is-the-operator-network.html" class="footer-link">About the network</a></li>
         </ul>
       </div>
 
@@ -424,8 +425,9 @@
           <li>
             <a href="https://stockholmgrowthfintech.substack.com/" target="_blank" rel="noopener" class="footer-link">Stockholm Growth &amp; Fintech</a>
           </li>
+          <li><a href="stockholm-growth-fintech-newsletter.html" class="footer-link">Who reads it</a></li>
           <li>
-            <a href="https://creativeperformancemarketing.substack.com/" target="_blank" rel="noopener" class="footer-link">Member Stories</a>
+            <a href="https://creativeperformancemarketing.substack.com/" target="_blank" rel="noopener" class="footer-link">The Belonging Economy</a>
           </li>
         </ul>
       </div>
@@ -473,33 +475,6 @@
     }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
     targets.forEach(function (t) { observer.observe(t); });
   });
-</script>
-
-<script>
-  (function () {
-    var modal = document.getElementById('visibility-modal');
-    var frame = modal.querySelector('iframe');
-    function openModal (e) {
-      if (e) e.preventDefault();
-      if (!frame.src) frame.src = frame.getAttribute('data-src');
-      modal.classList.add('open');
-      document.body.style.overflow = 'hidden';
-      modal.querySelector('.visibility-modal-close').focus();
-    }
-    function closeModal () {
-      modal.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-    document.querySelectorAll('.js-open-visibility').forEach(function (el) {
-      el.addEventListener('click', openModal);
-    });
-    modal.querySelectorAll('[data-close-visibility]').forEach(function (el) {
-      el.addEventListener('click', closeModal);
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
-    });
-  })();
 </script>
 
 </body>

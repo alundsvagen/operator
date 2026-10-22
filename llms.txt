@@ -9,7 +9,7 @@ Key facts:
 - Joining: by application. Criteria: at least two years of professional experience; CEO, CTO, CFO or CMO, a manager, or a technical expert; working in AI, fintech or SaaS; living in Stockholm.
 - Cost: free so far. Paid membership is planned at 850 kr a year with a three-month trial, and has not started. A nine-month member programme (media features, podcast, speaking slot, mentor match) starts with paid membership; nobody has completed it yet.
 - Sponsorship: none. Seats and agenda time are not for sale. Companies that want a room with specific buyers work with Alexandra Studio, and those events are hosted under the company's own name.
-- Events: 12 public events listed on Luma since October 2025, including the Embedded Finance Build Day (25 August 2026, Stockholm) with APIs from Open Payments and Zwapgrid and mentors from Danske Bank, Worldline and Froda.
+- Events: upcoming events on the Operator Network calendar at luma.com/operatornetwork; 12 earlier public events on Alexandra's Luma profile since October 2025, including the Embedded Finance Build Day (25 August 2026, Stockholm) with APIs from Open Payments and Zwapgrid and mentors from Danske Bank, Worldline and Froda.
 - Publication: Stockholm Growth & Fintech newsletter, 1,215 subscribers on 22 October 2026, 94% on work email, 193 readers at 53 banks. Features are editorial and never sold. A podcast is planned.
 - Alexandra's separate personal newsletter, The Belonging Economy, is not part of the Operator Network.
 
@@ -28,7 +28,8 @@ Key facts:
 ## Events
 
 - [Embedded Finance Build Day](https://theoperatornetwork.se/build-day.html): The 25 August 2026 bank hackathon, jury and problem set
-- [Events on Luma](https://luma.com/user/stockholmgrowth): Public event listings
+- [Operator Network events calendar](https://luma.com/operatornetwork): Upcoming events
+- [Alexandra Grisanti on Luma](https://luma.com/user/stockholmgrowth): Earlier events she has hosted
 
 ## Related
 

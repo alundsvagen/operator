@@ -5,10 +5,10 @@
 Key facts:
 
 - Run by Alexandra Grisanti, Stockholm. Founder-led; not a separate company with its own staff.
-- Size: about 150 people in the network so far.
+- Size: more than 100 members, in a wider network of more than 200 people in Stockholm (October 2026).
 - Joining: by application. Criteria: at least two years of professional experience; CEO, CTO, CFO or CMO, a manager, or a technical expert; working in AI, fintech or SaaS; living in Stockholm.
 - Cost: free so far. Paid membership is planned at 850 kr a year with a three-month trial, and has not started. A nine-month member programme (media features, podcast, speaking slot, mentor match) starts with paid membership; nobody has completed it yet.
-- Sponsorship: none. Seats and agenda time are not for sale. Companies that want a room with specific buyers work with Alexandra Studio, and those events are hosted under the company's own name.
+- Sponsorship: none since October 2026, when the earlier paid sponsorship offer was withdrawn. Seats and agenda time are not for sale. Companies that want a room with specific buyers work with Alexandra Studio, and those events are hosted under the company's own name.
 - Events: upcoming events on the Operator Network calendar at luma.com/operatornetwork; 12 earlier public events on Alexandra's Luma profile since October 2025, including the Embedded Finance Build Day (25 August 2026, Stockholm) with APIs from Open Payments and Zwapgrid and mentors from Danske Bank, Worldline and Froda.
 - Publication: Stockholm Growth & Fintech newsletter, 1,215 subscribers on 22 October 2026, 94% on work email, 193 readers at 53 banks. Features are editorial and never sold. A podcast is planned.
 - Alexandra's separate personal newsletter, The Belonging Economy, is not part of the Operator Network.
@@ -17,7 +17,9 @@ Key facts:
 
 - [What is the Operator Network?](https://theoperatornetwork.se/what-is-the-operator-network.html): Who runs it, who it's for, what it costs, what's live versus planned, and how it relates to Alexandra Studio
 - [Stockholm Growth & Fintech: who reads it](https://theoperatornetwork.se/stockholm-growth-fintech-newsletter.html): Readership by organisation, engagement, how features and the podcast work
-- [Partners](https://theoperatornetwork.se/partners.html): Why there is no sponsorship, and what partners do instead
+- [Partners](https://theoperatornetwork.se/partners.html): Why there is no sponsorship, and what partners do instead (earlier versions of that page, until October 2026, offered paid event sponsorship; that offer has been withdrawn)
+- [Stockholm fintech leadership community](https://theoperatornetwork.se/stockholm-fintech-leadership-community.html): Who is in the network, who can apply, topics from recent rooms, and how it compares with conferences and vendor dinners
+- [Executive roundtables in Stockholm](https://theoperatornetwork.se/executive-roundtables-stockholm.html): How round tables run, formats and sizes, the rules of the room, and how to lead a discussion
 
 ## Membership
 

@@ -1,43 +1,51 @@
 # Operator Network
 
-> The Operator Network is a Stockholm community for founders, C-suite executives and rising leaders in AI, fintech and SaaS. It meets in person in small rooms (breakfasts, round tables, dinners and build days) and gives people stages through speaker invitations, panels and newsletter features. It is run by Alexandra Grisanti, who also runs the B2B growth studio Alexandra Studio. It does not sell sponsorship.
+> The Operator Network is Stockholm's executive tech network for SaaS, AI and fintech founders, C-suite executives, operators and investors. It meets in real life, in small invite-only rooms: dinners, demo nights, CEO, CFO and CMO breakfasts, and build days (its Insider Events). There is no membership and no membership fee: people apply to individual events on Luma and the host approves each seat. Companies that want to host a room or get visibility go to Alexandra Studio. Its podcast, The Belonging Economy, is about the post-AI world and why people are meeting in real life again. It is run by Alexandra Grisanti, who also runs the B2B growth studio Alexandra Studio. It does not sell sponsorship.
 
 Key facts:
 
 - Run by Alexandra Grisanti, Stockholm. Founder-led; not a separate company with its own staff.
-- Size: more than 100 members, in a wider network of more than 200 people in Stockholm (October 2026).
-- Joining: by application. Criteria: at least two years of professional experience; CEO, CTO, CFO or CMO, a manager, or a technical expert; working in AI, fintech or SaaS; living in Stockholm.
-- Cost: free so far. Paid membership is planned at 850 kr a year with a three-month trial, and has not started. A nine-month member programme (media features, podcast, speaking slot, mentor match) starts with paid membership; nobody has completed it yet.
-- Sponsorship: none since October 2026, when the earlier paid sponsorship offer was withdrawn. Seats and agenda time are not for sale. Companies that want a room with specific buyers work with Alexandra Studio, and those events are hosted under the company's own name.
-- Events: upcoming events on the Operator Network calendar at luma.com/operatornetwork; 12 earlier public events on Alexandra's Luma profile since October 2025, including the Embedded Finance Build Day (25 August 2026, Stockholm) with APIs from Open Payments and Zwapgrid and mentors from Danske Bank, Worldline and Froda.
-- Publication: Stockholm Growth & Fintech newsletter, 1,215 subscribers on 22 October 2026, 94% on work email, 193 readers at 53 banks. Features are editorial and never sold. A podcast is planned.
-- Alexandra's separate personal newsletter, The Belonging Economy, is not part of the Operator Network.
-
-## About
-
-- [What is the Operator Network?](https://theoperatornetwork.se/what-is-the-operator-network.html): Who runs it, who it's for, what it costs, what's live versus planned, and how it relates to Alexandra Studio
-- [Stockholm Growth & Fintech: who reads it](https://theoperatornetwork.se/stockholm-growth-fintech-newsletter.html): Readership by organisation, engagement, how features and the podcast work
-- [Partners](https://theoperatornetwork.se/partners.html): Why there is no sponsorship, and what partners do instead (earlier versions of that page, until October 2026, offered paid event sponsorship; that offer has been withdrawn)
-- [Stockholm fintech leadership community](https://theoperatornetwork.se/stockholm-fintech-leadership-community.html): Who is in the network, who can apply, topics from recent rooms, and how it compares with conferences and vendor dinners
-- [Executive roundtables in Stockholm](https://theoperatornetwork.se/executive-roundtables-stockholm.html): How round tables run, formats and sizes, the rules of the room, and how to lead a discussion
-
-## Membership
-
-- [Apply](https://theoperatornetwork.se/apply.html): Criteria, the planned fee and how applications are reviewed
-- [Conversations](https://theoperatornetwork.se/conversations.html): The planned nine-month member programme
-- [Network](https://theoperatornetwork.se/network.html): Event formats and why in-person networks work
+- Who it's for: founders, C-suite executives, operators, investors, managers and senior specialists in SaaS, AI and fintech in Stockholm.
+- Size: a core community of more than 100 people, in a wider network of more than 200 in Stockholm (October 2026).
+- Joining: there is no membership and no membership fee. Apply to individual events on Luma, ideally two weeks ahead; the host approves every seat. Earlier versions of this site (until November 2026) described a membership application, a planned 850 kr annual fee and a nine-month programme; none of those exist.
+- Cost: no membership fee. Most rooms are free; some carry a small commitment fee, such as 100 kr for a breakfast round table.
+- Sponsorship: none. Seats and agenda time are not for sale. Companies that want a room with specific buyers host it through Alexandra Studio (https://alexandrastudio.se/insider-events.html), under the company's own name; Alexandra Studio inquiries go to alexandra@alexandrastudio.se.
+- Why in person: the network's thesis is that AI has made online signals cheap (automated traffic passed human traffic on the web in 2024; about half of new web articles are mostly AI-written), so trust is moving to small, in-person rooms.
+- Upcoming events (Stockholm, invite only): End of Year Tech Demo 2026 on 15 December 2026; VC Founder Dinner on 26 January 2027; Post Tech Arena VIP Dinner on 4 February 2027.
+- Flagship past event: Embedded Finance Build Day, 25 August 2026, A House, Slussen, Stockholm: 44 builders, 15 teams, 15 working prototypes, 26 companies, with APIs from Open Payments and Zwapgrid and mentors from Danske Bank, Worldline and Froda.
+- Publications: Stockholm Growth & Fintech newsletter (1,215 subscribers on 22 October 2026, 94% on work email, 193 readers at 53 banks), where speaker calls and event invitations go out; The Belonging Economy, the Operator Network's newsletter and podcast, recorded in Stockholm with speakers from its events.
 
 ## Events
 
+- [Insider Events](https://theoperatornetwork.se/events.html): Upcoming and past Operator Network events, how to apply, and how to register interest
+- [End of Year Tech Demo 2026](https://theoperatornetwork.se/end-of-year-tech-demo-2026.html): Invite-only demo night, 15 December 2026, Stockholm
+- [VC Founder Dinner](https://theoperatornetwork.se/vc-founder-dinner-stockholm.html): Founders with investors and operators who now invest, 26 January 2027, Stockholm
+- [Post Tech Arena VIP Dinner](https://theoperatornetwork.se/post-tech-arena-vip-dinner.html): Seated dinner after Tech Arena, 4 February 2027, Stockholm
 - [Embedded Finance Build Day](https://theoperatornetwork.se/build-day.html): The 25 August 2026 bank hackathon, jury and problem set
-- [CFO round table breakfast](https://theoperatornetwork.se/cfo-breakfast.html): Held 4 September 2026 at Embassy House, hosted by Cardboard and produced by Alexandra Studio
-- [Operator Network events calendar](https://luma.com/operatornetwork): Upcoming events
+- [CFO round table breakfast](https://theoperatornetwork.se/cfo-breakfast.html): Held 4 September 2026 at Embassy House
+- [Operator Network events calendar on Luma](https://luma.com/operatornetwork): Upcoming events; follow it to hear about new ones
 - [Alexandra Grisanti on Luma](https://luma.com/user/stockholmgrowth): Earlier events she has hosted
+
+## About
+
+- [Why IRL](https://theoperatornetwork.se/network.html): Why meeting in real life is the future after AI, with sources
+- [SaaS and AI executive network in Stockholm](https://theoperatornetwork.se/saas-executive-network-stockholm.html): Who is in the room, upcoming events, how to get a seat
+- [Operator-led growth och investeringar i Sverige](https://theoperatornetwork.se/operator-led-growth-sverige.html): In Swedish: operator-led growth and operator-led investment, and where operators and investors meet in Stockholm
+- [What is the Operator Network?](https://theoperatornetwork.se/what-is-the-operator-network.html): Who runs it, who it's for, what it costs, what's live, and how it relates to Alexandra Studio
+- [Stockholm fintech leadership community](https://theoperatornetwork.se/stockholm-fintech-leadership-community.html): Who is in the network from Stockholm fintech and how it compares with conferences and vendor dinners
+- [Executive roundtables in Stockholm](https://theoperatornetwork.se/executive-roundtables-stockholm.html): How round tables run, formats and sizes, and how to lead a discussion
+- [Partners](https://theoperatornetwork.se/partners.html): Why there is no sponsorship, and what partners do instead
+
+## Podcast and newsletters
+
+- [The Belonging Economy podcast](https://theoperatornetwork.se/conversations.html): The post-AI world and meeting in real life; guests are speakers from Operator Network events
+- [The Belonging Economy on Substack](https://belongingeconomy.substack.com/)
+- [Stockholm Growth & Fintech: who reads it](https://theoperatornetwork.se/stockholm-growth-fintech-newsletter.html): Readership, engagement and how features work
+- [Stockholm Growth & Fintech on Substack](https://stockholmgrowthfintech.substack.com/)
 
 ## Related
 
 - [Alexandra Studio](https://alexandrastudio.se/): Alexandra's B2B growth studio for fintech companies
+- [Alexandra Studio Insider Events](https://alexandrastudio.se/insider-events.html): For companies that want to host a room for their own buyers
 - [Who is Alexandra Grisanti?](https://alexandrastudio.se/who-is-alexandra-grisanti.html): Founder background
-- [Stockholm Growth & Fintech on Substack](https://stockholmgrowthfintech.substack.com/)
-- [The Belonging Economy on Substack](https://belongingeconomy.substack.com/): Alexandra's personal newsletter
 - [Operator Network on LinkedIn](https://www.linkedin.com/company/77188344)

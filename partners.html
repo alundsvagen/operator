@@ -264,20 +264,39 @@
   ]
 }
 </script>
+<link rel="stylesheet" href="nav.css">
 </head>
 <body class="text-[#F5EAD6]">
 
 <!-- Header -->
 <header class="sticky top-0 z-50 bg-black/85 backdrop-blur border-b border-[#F5EAD6]/15">
-  <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-    <a href="/" class="font-bold text-2xl tracking-tight">Operator Network</a>
-    <nav class="hidden md:flex items-center gap-8">
-      <a href="conversations.html" class="nav-link">Conversations</a>
-      <a href="network.html" class="nav-link">Network</a>
+  <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between gap-6">
+    <a href="/" class="font-bold text-2xl tracking-tight whitespace-nowrap">Operator Network</a>
+    <nav class="hidden lg:flex items-center gap-7" aria-label="Main">
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="build-day.html" class="nav-link">Build Day</a>
+      <a href="conversations.html" class="nav-link">Podcast</a>
+      <a href="network.html" class="nav-link">Why IRL</a>
       <a href="partners.html" class="nav-link active" aria-current="page">Partners</a>
-      <a href="apply.html" class="nav-link nav-cta"><span>Apply <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a href="events.html#invites" class="nav-link nav-cta"><span>Get event invites <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
     </nav>
-    <a href="apply.html" class="md:hidden bg-[#F5EAD6] text-black text-sm px-4 py-2 rounded-full btn-pop">Apply</a>
+    <div class="lg:hidden flex items-center gap-2">
+      <a href="events.html" class="bg-[#F5EAD6] text-black text-sm px-4 py-2 rounded-full btn-pop">Events</a>
+      <details class="m-menu">
+        <summary aria-label="Open menu">
+          <svg class="m-icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="m-icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </summary>
+        <nav class="m-panel" aria-label="Menu">
+          <a href="events.html">Events</a>
+          <a href="build-day.html">Build Day</a>
+          <a href="conversations.html">Podcast</a>
+          <a href="network.html">Why IRL</a>
+          <a href="partners.html">Partners</a>
+          <a href="events.html#invites" class="m-cta">Get event invites</a>
+        </nav>
+      </details>
+    </div>
   </div>
 </header>
 
@@ -403,61 +422,59 @@
     <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-[#F5EAD6]/15">
       <div>
         <p class="text-2xl font-semibold">Want to build something with us?</p>
-        <p class="text-[#F5EAD6]/60 mt-2 max-w-md">Partnerships start with a 30-minute conversation about what we could build together.</p>
+        <p class="text-[#F5EAD6]/60 mt-2 max-w-md">Partnerships start with a conversation about what we could build together. Or come to a room first.</p>
       </div>
-      <a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener"
-         class="btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full whitespace-nowrap">
-        Book a meeting →
-      </a>
+      <div class="flex flex-wrap gap-3">
+        <a href="events.html" class="btn-pop inline-flex items-center justify-center bg-[#F5EAD6] text-black text-sm font-medium px-6 py-3 rounded-full whitespace-nowrap">See upcoming events →</a>
+        <a href="https://luma.com/operatornetwork" target="_blank" rel="noopener" class="btn-pop inline-flex items-center justify-center border border-[#F5EAD6]/40 text-[#F5EAD6] text-sm font-medium px-6 py-3 rounded-full whitespace-nowrap">Follow on Luma</a>
+      </div>
     </div>
 
     <div class="grid md:grid-cols-4 gap-10 pt-12">
       <div class="reveal">
         <a href="/" class="font-bold text-xl tracking-tight">Operator Network</a>
-        <p class="text-[#F5EAD6]/60 text-sm mt-3 max-w-[26ch]">A Stockholm community of founders, executives and rising leaders who meet in person.</p>
+        <p class="text-[#F5EAD6]/60 text-sm mt-3 max-w-[28ch]">Stockholm's executive tech network for SaaS, AI and fintech. We meet in real life.</p>
         <a href="https://www.linkedin.com/company/77188344" target="_blank" rel="noopener" aria-label="Operator Network on LinkedIn" class="social-icon mt-5">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/>
-          </svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
         </a>
       </div>
 
       <div class="reveal" style="--delay:.05s">
-        <p class="text-sm font-semibold text-[#F5EAD6] uppercase tracking-wide mb-4">Site</p>
+        <p class="text-sm font-semibold text-[#F5EAD6] uppercase tracking-wide mb-4">Events</p>
         <ul class="space-y-3 text-sm">
-          <li><a href="conversations.html" class="footer-link">Conversations</a></li>
-          <li><a href="network.html" class="footer-link">Network</a></li>
-          <li><a href="partners.html" class="footer-link">Partners</a></li>
-          <li><a href="apply.html" class="footer-link">Apply</a></li>
-          <li><a href="what-is-the-operator-network.html" class="footer-link">About the network</a></li>
-          <li><a href="stockholm-fintech-leadership-community.html" class="footer-link">Fintech leadership community</a></li>
-          <li><a href="executive-roundtables-stockholm.html" class="footer-link">Executive roundtables</a></li>
+          <li><a href="events.html" class="footer-link">Insider Events</a></li>
+          <li><a href="build-day.html" class="footer-link">Embedded Finance Build Day</a></li>
+          <li><a href="end-of-year-tech-demo-2026.html" class="footer-link">End of Year Tech Demo</a></li>
+          <li><a href="vc-founder-dinner-stockholm.html" class="footer-link">VC Founder Dinner</a></li>
+          <li><a href="post-tech-arena-vip-dinner.html" class="footer-link">Post Tech Arena VIP Dinner</a></li>
+          <li><a href="events.html#invites" class="footer-link">Register interest</a></li>
         </ul>
       </div>
 
       <div class="reveal" style="--delay:.1s">
-        <p class="text-sm font-semibold text-[#F5EAD6] uppercase tracking-wide mb-4">Newsletters</p>
+        <p class="text-sm font-semibold text-[#F5EAD6] uppercase tracking-wide mb-4">Listen &amp; read</p>
         <ul class="space-y-3 text-sm">
-          <li>
-            <a href="https://stockholmgrowthfintech.substack.com/" target="_blank" rel="noopener" class="footer-link">Stockholm Growth &amp; Fintech</a>
-          </li>
+          <li><a href="conversations.html" class="footer-link">The Belonging Economy podcast</a></li>
+          <li><a href="https://belongingeconomy.substack.com/" target="_blank" rel="noopener" class="footer-link">The Belonging Economy on Substack</a></li>
+          <li><a href="https://stockholmgrowthfintech.substack.com/" target="_blank" rel="noopener" class="footer-link">Stockholm Growth &amp; Fintech</a></li>
           <li><a href="stockholm-growth-fintech-newsletter.html" class="footer-link">Who reads it</a></li>
-          <li>
-            <a href="https://belongingeconomy.substack.com/" target="_blank" rel="noopener" class="footer-link">The Belonging Economy</a>
-          </li>
+          <li><a href="https://luma.com/operatornetwork" target="_blank" rel="noopener" class="footer-link">Events on Luma</a></li>
         </ul>
       </div>
 
       <div class="reveal" style="--delay:.15s">
-        <p class="text-sm font-semibold text-[#F5EAD6] uppercase tracking-wide mb-4">Connect</p>
+        <p class="text-sm font-semibold text-[#F5EAD6] uppercase tracking-wide mb-4">Community</p>
         <ul class="space-y-3 text-sm">
-          <li><a href="https://www.linkedin.com/company/77188344" target="_blank" rel="noopener" class="footer-link">LinkedIn</a></li>
-          <li><a href="https://luma.com/operatornetwork" target="_blank" rel="noopener" class="footer-link">Events on Luma</a></li>
-          <li><a href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener" class="footer-link">Book a meeting</a></li>
+          <li><a href="network.html" class="footer-link">Why IRL, after AI</a></li>
+          <li><a href="saas-executive-network-stockholm.html" class="footer-link">SaaS &amp; AI executive network</a></li>
+          <li><a href="operator-led-growth-sverige.html" class="footer-link" hreflang="sv">Operator-led growth i Sverige</a></li>
+          <li><a href="stockholm-fintech-leadership-community.html" class="footer-link">Fintech leadership community</a></li>
+          <li><a href="executive-roundtables-stockholm.html" class="footer-link">Executive roundtables</a></li>
+          <li><a href="partners.html" class="footer-link">Partners</a></li>
+          <li><a href="what-is-the-operator-network.html" class="footer-link">About the network</a></li>
         </ul>
       </div>
     </div>
-
 
     <a href="/" class="reveal wordmark footer-wordmark block mt-16" aria-label="Operator Network home">
       <span class="wm-line"><span class="wm-inner">Operator</span></span>
@@ -467,9 +484,10 @@
     <div class="reveal flex flex-col md:flex-row items-center justify-between gap-4 mt-6 pt-8 border-t border-[#F5EAD6]/15">
       <p class="text-[#F5EAD6]/60 text-sm">© 2026 Operator Network. All rights reserved.</p>
       <div class="flex gap-6 text-sm">
-        <a href="conversations.html" class="footer-link">Conversations</a>
-        <a href="network.html" class="footer-link">Network</a>
-        <a href="partners.html" class="footer-link">Partners</a>
+        <a href="events.html" class="footer-link">Events</a>
+        <a href="conversations.html" class="footer-link">Podcast</a>
+        <a href="network.html" class="footer-link">Why IRL</a>
+        <a href="mailto:alexandra@alexandrastudio.se" class="footer-link">Contact</a>
       </div>
     </div>
   </div>

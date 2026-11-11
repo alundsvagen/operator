@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Operator Network — shared header menu (all pages)
+   The desktop nav uses .nav-link from site.css / articles.css / inline styles.
+   This file only adds the small-screen menu, so every page can reach
+   Events, Build Day, the podcast and Why IRL from a phone.
+   ========================================================================== */
+
+.m-menu{ position:relative; }
+.m-menu > summary{
+  list-style:none; cursor:pointer; display:inline-flex; align-items:center; justify-content:center;
+  width:40px; height:40px; border-radius:999px; border:1px solid rgb(212,212,212); background:#fff;
+}
+.m-menu > summary::-webkit-details-marker{ display:none; }
+.m-menu > summary:focus-visible{ outline:2px solid rgb(10,10,10); outline-offset:2px; }
+.m-menu .m-icon-close{ display:none; }
+.m-menu[open] .m-icon-open{ display:none; }
+.m-menu[open] .m-icon-close{ display:block; }
+.m-panel{
+  position:absolute; right:0; top:52px; width:min(84vw, 300px);
+  background:#fff; border:1px solid rgb(229,229,229); border-radius:1.25rem;
+  box-shadow: 0 24px 48px -24px rgba(0,0,0,.35); padding:10px; z-index:60;
+}
+.m-panel a{
+  display:block; padding:12px 14px; border-radius:.9rem; font-weight:500; color: rgb(38,38,38);
+}
+.m-panel a:hover{ background: rgb(245,245,245); }
+.m-panel a.m-cta{ background: rgb(10,10,10); color:#fff; text-align:center; margin-top:6px; }
+.m-panel a.m-cta:hover{ background: rgb(38,38,38); }
+@media (min-width: 1024px){ .m-menu{ display:none; } }
+
+/* Footer wordmark lines on pages without their own wordmark styles */
+.wm-line{ display:block; overflow:hidden; }

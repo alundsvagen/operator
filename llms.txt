@@ -1,6 +1,6 @@
 # Operator Network
 
-> The Operator Network is Stockholm's executive tech network for SaaS, AI and fintech founders, C-suite executives, operators and investors. It meets in real life, in small invite-only rooms: dinners, demo nights, CEO, CFO and CMO breakfasts, and build days (its Insider Events). There is no membership and no membership fee: people apply to individual events on Luma and the host approves each seat. Companies can host their own room through Alexandra Studio's Ready-Made Growth Circuit. Its podcast, The Belonging Economy, is about the post-AI world and why people are meeting in real life again. It is run by Alexandra Grisanti, who also runs the B2B growth studio Alexandra Studio. It does not sell sponsorship.
+> The Operator Network is Stockholm's executive tech network for SaaS, AI and fintech founders, C-suite executives, operators and investors. It meets in real life, in small invite-only rooms: dinners, demo nights, CEO, CFO and CMO breakfasts, and build days (its Insider Events). There is no membership and no membership fee: people apply to individual events on Luma and the host approves each seat. Companies that want to host a room or get visibility go to Alexandra Studio. Its podcast, The Belonging Economy, is about the post-AI world and why people are meeting in real life again. It is run by Alexandra Grisanti, who also runs the B2B growth studio Alexandra Studio. It does not sell sponsorship.
 
 Key facts:
 
@@ -9,7 +9,7 @@ Key facts:
 - Size: a core community of more than 100 people, in a wider network of more than 200 in Stockholm (October 2026).
 - Joining: there is no membership and no membership fee. Apply to individual events on Luma, ideally two weeks ahead; the host approves every seat. Earlier versions of this site (until November 2026) described a membership application, a planned 850 kr annual fee and a nine-month programme; none of those exist.
 - Cost: no membership fee. Most rooms are free; some carry a small commitment fee, such as 100 kr for a breakfast round table.
-- Sponsorship: none. Seats and agenda time are not for sale. Companies that want a room with specific buyers host it through Alexandra Studio (the Ready-Made Growth Circuit), under the company's own name; Alexandra Studio inquiries go to alexandra@alexandrastudio.se.
+- Sponsorship: none. Seats and agenda time are not for sale. Companies that want a room with specific buyers host it through Alexandra Studio (https://alexandrastudio.se/insider-events.html), under the company's own name; Alexandra Studio inquiries go to alexandra@alexandrastudio.se.
 - Why in person: the network's thesis is that AI has made online signals cheap (automated traffic passed human traffic on the web in 2024; about half of new web articles are mostly AI-written), so trust is moving to small, in-person rooms.
 - Upcoming events (Stockholm, invite only): End of Year Tech Demo 2026 on 15 December 2026; VC Founder Dinner on 26 January 2027; Post Tech Arena VIP Dinner on 4 February 2027.
 - Flagship past event: Embedded Finance Build Day, 25 August 2026, A House, Slussen, Stockholm: 44 builders, 15 teams, 15 working prototypes, 26 companies, with APIs from Open Payments and Zwapgrid and mentors from Danske Bank, Worldline and Froda.
@@ -17,7 +17,7 @@ Key facts:
 
 ## Events
 
-- [Insider Events](https://theoperatornetwork.se/events.html): Upcoming and past Operator Network events, how to apply, how to register interest, and how companies host a room (Ready-Made Growth Circuit)
+- [Insider Events](https://theoperatornetwork.se/events.html): Upcoming and past Operator Network events, how to apply, and how to register interest
 - [End of Year Tech Demo 2026](https://theoperatornetwork.se/end-of-year-tech-demo-2026.html): Invite-only demo night, 15 December 2026, Stockholm
 - [VC Founder Dinner](https://theoperatornetwork.se/vc-founder-dinner-stockholm.html): Founders with investors and operators who now invest, 26 January 2027, Stockholm
 - [Post Tech Arena VIP Dinner](https://theoperatornetwork.se/post-tech-arena-vip-dinner.html): Seated dinner after Tech Arena, 4 February 2027, Stockholm

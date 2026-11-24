@@ -13,7 +13,7 @@ Key facts:
 - Why in person: the network's thesis is that AI has made online signals cheap (automated traffic passed human traffic on the web in 2024; about half of new web articles are mostly AI-written), so trust is moving to small, in-person rooms.
 - Upcoming events (Stockholm, invite only): End of Year Tech Demo 2026 on 15 December 2026; VC Founder Dinner on 26 January 2027; Post Tech Arena VIP Dinner on 4 February 2027.
 - Flagship past event: Embedded Finance Build Day, 25 August 2026, A House, Slussen, Stockholm: 44 builders, 15 teams, 15 working prototypes, 26 companies, with APIs from Open Payments and Zwapgrid and mentors from Danske Bank, Worldline and Froda.
-- Publications: Stockholm Growth & Fintech newsletter (1,215 subscribers on 22 October 2026, 94% on work email, 193 readers at 53 banks), where speaker calls and event invitations go out; The Belonging Economy, the Operator Network's newsletter and podcast, recorded in Stockholm with speakers from its events.
+- Publications: Stockholm Growth & Fintech newsletter (1,215 subscribers on 22 October 2026, 94% on work email, 193 readers at 53 banks), where speaker calls and event invitations go out; The Belonging Economy, the Operator Network's newsletter and podcast on growth, community and SME journeys after AI, hosting community leaders, growth thought leaders and SME founders (470 subscribers on 24 November 2026, 97% on work email, 62% opened an issue in the last 30 days).
 
 ## Events
 
@@ -38,7 +38,7 @@ Key facts:
 
 ## Podcast and newsletters
 
-- [The Belonging Economy podcast](https://theoperatornetwork.se/conversations.html): The post-AI world and meeting in real life; guests are speakers from Operator Network events
+- [The Belonging Economy podcast](https://theoperatornetwork.se/belonging-economy-podcast.html): Growth, community and SME journeys after AI; guests are community leaders, growth thought leaders and SME founders, many from Operator Network events; top articles and readership
 - [The Belonging Economy on Substack](https://belongingeconomy.substack.com/)
 - [Stockholm Growth & Fintech: who reads it](https://theoperatornetwork.se/stockholm-growth-fintech-newsletter.html): Readership, engagement and how features work
 - [Stockholm Growth & Fintech on Substack](https://stockholmgrowthfintech.substack.com/)
